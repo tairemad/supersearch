@@ -1,0 +1,78 @@
+<section class="mainbar">
+  <section class="matter">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <uib-accordion close-others="oneAtATime">
+            <div uib-accordion-group class="panel-default" is-open="status.open">
+              <uib-accordion-heading>
+                Compose Message <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+              </uib-accordion-heading>
+              <div class="row">
+                <div class="col-xs-12">
+                  <select class="col-xs-12">
+                    <option value="">Select Letter</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <select class="col-xs-12">
+                    <option value="">Run Campaign Everyday</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <input class="col-xs-12" placeholder="Until Monday July 11, 2016">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <input class="col-xs-12" placeholder="Subject Line">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <h5>Message</h5>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <textarea ui-tinymce="tinymceOptions" ng-model="tinymceModel"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-6 text-right">
+                  Cancel
+                </div>
+                <div class="col-xs-6">
+                  <button>Save</button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <input type="checkbox" value="saveAsTemplate"> Save as template
+                </div>
+              </div>
+            </div>
+            <div uib-accordion-group class="panel-default" is-open="status.open">
+              <uib-accordion-heading>
+                5 Day Follow up Message <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+              </uib-accordion-heading>
+              This is just some content to illustrate fancy headings.
+            </div>
+            <div uib-accordion-group class="panel-default" is-open="status.open">
+              <uib-accordion-heading>
+                10 Day Follow-Up Message <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+              </uib-accordion-heading>
+              This is just some content to illustrate fancy headings.
+            </div>
+          </uib-accordion>
+        </div>
+      </div>
+
+  </section>
+  </section>
+
+
