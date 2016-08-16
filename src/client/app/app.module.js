@@ -4,6 +4,7 @@
   angular.module('app', [
     'app.core',
     'app.about',
+    'app.addClientCriteria',
     'app.widgets',
     'app.admin',
     'app.dashboard',
