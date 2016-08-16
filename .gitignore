@@ -5,3 +5,9 @@ bower_components/
 
 # other
 .tmp
+
+.idea/vcs.xml
+
+.idea/workspace.xml
+
+.idea/workspace.xml
