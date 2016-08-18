@@ -1,91 +1,132 @@
-<section id="addClientCriteria-view" class="mainbar">
+<section class="mainbar">
   <section class="matter">
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
-          <div class="datas-text pull-left">
-            <h5>About Super Search</h5>
-            <span>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac vulputate turpis.
-            </span>
-          </div>
-          <div class="col-md-12">
-            <img src="http://placehold.it/280x157" class="text-center">
-          </div>
-
+        <div class="col-xs-12">
+          <h5>Art Director</h5>
+          <input type="text" placeholder="Temporary/Part-time" name="canidateSearch" class="col-xs-12">
         </div>
-        <ul>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing.</li>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing.</li>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing.</li>
-        </ul>
-        <p class="text-center">Get 7 Day Free Trial</p>
-        <p class="text-center">
-          <button class="text-center">Buy Now</button>
-        </p>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <ul class="today-datas">
-            <li class="blightblue">
-              <div class="pull-left"><i class="fa fa-plane"></i></div>
-              <div class="datas-text pull-right">
-                <span class="bold">May 18 - 19, 2015</span> Castle Resort, Neverland
-              </div>
-              <div class="clearfix"></div>
-            </li>
-
-            <li class="borange">
-              <div class="pull-left"><i class="fa fa-envelope"></i></div>
-              <div class="datas-text pull-right">
-                <span class="bold">{{vm.messageCount}}</span> Messages
-              </div>
-              <div class="clearfix"></div>
-            </li>
-
-          </ul>
+        <div class="col-xs-12">
+          Advanced Options | Recent Criteria
         </div>
       </div>
+    </div>
+  </section>
+  <section class="matter">
+    <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <div class="widget wviolet">
-            <div ht-widget-header title="People" allow-collapse="true"></div>
-            <div class="widget-content text-center text-info">
-              <table class="table table-condensed table-striped">
-                <thead>
-                  <tr>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Age</th>
-                    <th>Location</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr ng-repeat="p in vm.people">
-                    <td>{{p.firstName}}</td>
-                    <td>{{p.lastName}}</td>
-                    <td>{{p.age}}</td>
-                    <td>{{p.location}}</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="widget-foot">
-              <div class="clearfix"></div>
-            </div>
+        <h5>My Job Campaigns</h5>
+      </div>
+      <div class="row">
+        <div class="widget wgreen">
+          <span class="text-center" ht-widget-header title="40 Matches" subtitle="Select from your Matches"></span>
+          <div class="widget-content user">
+
+          </div>
+          <div class="widget-foot">
+            <div class="clearfix"></div>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="widget wgreen">
-            <div ht-widget-header title="{{vm.news.title}}" allow-collapse="true"></div>
-            <div class="widget-content text-center text-info">
-              <small>{{vm.news.description}}</small>
+      </div>
+    </div>
+  </section>
+  <section class="matter">
+    <div class="container">
+      <div class="row">
+        <div uib-accordion-group class="panel-default" is-open="status.open">
+          <uib-accordion-heading>
+            <div class="row">
+              <div class="col-xs-2">
+                  <div>
+                    9.9
+                  </div>
+              </div>
+              <div class="col-xs-8">
+                <div class="row">
+                  <div class="col-xs-12">
+                    Andrea Testa
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    Director of Engineering
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    Acme Corporation
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    Bachelor of Engineering
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    Boston, Ma
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-2">
+                <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+              </div>
             </div>
-            <div class="widget-foot">
-              <div class="clearfix"></div>
-            </div>
-          </div>
+          </uib-accordion-heading>
+          This is just some content to illustrate fancy headings.
         </div>
+      </div>
+      <div class="row">
+
+      </div>
+    </div>
+  </section>
+  <section class="matter">
+    <div class="container">
+      <div class="row">
+        <h5>Get Canidates</h5>
+        To get a quick start, select a poluar Job Title or Skill in Boston
+      </div>
+      <div class="row">
+        <uib-accordion close-others="oneAtATime">
+        <uib-tabset active="active">
+          <uib-tab index="0" heading="Job Title">
+            <div class="col-xs-12">
+              <div class="row ">
+                <div class="col-xs-6">
+                  Art Director
+                </div>
+                <div class="col-xs-6">
+                  Graphic Designer
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-6">
+                  Creative Director
+                </div>
+                <div class="col-xs-6">
+                  Graphic Manager
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-6">
+                  Visual Designer
+                </div>
+                <div class="col-xs-6">
+                  UX Manager
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-6">
+                  User Experience Designer
+                </div>
+                <div class="col-xs-6">
+                  User Interface Designer
+                </div>
+              </div>
+            </div>
+          </uib-tab>
+        </uib-accordion>
       </div>
     </div>
   </section>
