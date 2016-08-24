@@ -5,17 +5,20 @@
     .module('app.addClientCriteria')
     .controller('AddClientCriteriaController', AddClientCriteriaController);
 
-  AddClientCriteriaController.$inject = ['$q', 'dataservice', 'logger'];
+  AddClientCriteriaController.$inject = ['$q', 'dataservice', 'logger', '$scope'];
   /* @ngInject */
-  function AddClientCriteriaController($q, dataservice, logger) {
+  function AddClientCriteriaController($q, dataservice, logger, $scope) {
     var vm = this;
     vm.news = {
       title: 'superSearch',
-      description: 'Hot Towel Angular is a SPA template for Angular developers.'
+      description: 'Monster - Super Search'
     };
     vm.messageCount = 0;
     vm.people = [];
     vm.title = 'Add Client Criteria';
+    $scope.headerRules = {};
+    $scope.headerRules.showTopNav = false;
+//   vm.scrollTo = scrollTo(target);
 
     activate();
 
@@ -39,5 +42,9 @@
         return vm.people;
       });
     }
+
+   // function scrollTO (target){
+
+    //}
   }
 })();

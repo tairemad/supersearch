@@ -2122,23 +2122,63 @@ div.campCardTopBox:before {
 
 /***************add client criteria****************/
 #matchesDiv{
-  margin-top: 75px;
+  margin-top: 20px;
+
+}
+
+#canidateMenu{
+  margin-top: 20px;
+  height:50px;
+  background-color: white;
+}
+
+.canidateType{
+
+  border-right:1px solid;
+  border-bottom:1px solid;
+  height:50px;
+  padding-top:15px;
+
+  &.active{
+    background-color: black;
+    color: #ffffff;
+
+    &:after {
+      top: 100%;
+      left: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(0, 0, 0, 0);
+      border-top-color: #A1A1A1;
+      border-width: 10px;
+      margin-left: -10px;
+    }
+  }
 
 }
 
 
 #criteriaDiv{
-  position:fixed;
-  top:50px;
-  z-index:-99;
+  //position:fixed;
+  top:80px;
+  //z-index:-99;
   left:5px;
+}
+
+.fix-to-top {
+  position: fixed;
+  top: 30px;
 }
 
 
 
 #criteriaResults{
   postion:relative;
-  margin-top:130px;
+  margin-top:15px;
 
 }
 
@@ -2157,26 +2197,28 @@ div.campCardTopBox:before {
   font-size:16px;
   top:0px;
 
+    &:after {
+      top: 100%;
+      left: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(136, 183, 213, 0);
+      border-top-color: #A1A1A1;
+      border-width: 10px;
+      margin-left: -10px;
+    }
+
 
 }
 
-.canidateMatchHeader:after {
-  top: 100%;
-  left: 50%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-  border-color: rgba(136, 183, 213, 0);
-  border-top-color: #A1A1A1;
-  border-width: 10px;
-  margin-left: -10px;
-}
+
 
 .canidateMatchHeaderLgTxt{
-  padding-top:10px;
+  padding-top:25px;
   font-size:26px;
 }
 

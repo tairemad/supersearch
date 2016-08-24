@@ -19,13 +19,25 @@
     </div>
   </section>
   <section>
-    <div class="container" id="matchesDiv">
+    <div class="container" id="matchesDiv" ht-widget-set-class-when-at-top="fix-to-top" myvalue="headerRules.showTopNav" ng-show="!headerRules.showTopNav">
       <div class="row">
         <div class="col-xs-12">
-          <div class="canidateMatchHeader text-center">
-            <span>Select from your</span><br>
-            <div class="canidateMatchHeaderLgTxt">40 Matches</div><br>
+          <div class="canidateMatchHeader text-center" >
+            <div class="canidateMatchHeaderLgTxt">40 Matches-{{headerRules.showTopNav}}</div><br>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="canidateMenu" ht-widget-set-class-when-at-top="fix-to-top" myvalue="headerRules.showTopNav" ng-show="headerRules.showTopNav">
+      <div class="row">
+        <div class="col-xs-4 text-center canidateType active">
+          Matched
+        </div>
+        <div class="col-xs-4 text-center canidateType">
+          Selected
+        </div>
+        <div class="col-xs-4 text-center canidateType">
+          Skipped
         </div>
       </div>
     </div>
