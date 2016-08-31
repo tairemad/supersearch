@@ -31,6 +31,7 @@
     "angular-bootstrap": "^1.2.5",
     "ngtouch": "^1.0.1",
     "angular-ui-tinymce": "^0.0.16"
+
   },
   "resolutions": {
     "angular": "1.5.3"

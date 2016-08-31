@@ -2034,6 +2034,7 @@ div.campCardTopBox:before {
 
 
 .matchSquare{
+  position: relative;
   margin-top: 15px;
   padding-top:15px;
   height:50px;
@@ -2041,6 +2042,7 @@ div.campCardTopBox:before {
   background-color: #5e5e5e;
   color: white;
   font-size:22px;
+  z-index: -50;
 
 }
 
@@ -2066,21 +2068,23 @@ div.campCardTopBox:before {
   font-size: 15pt;
   padding-top:10px;
   margin-top:5px;
+
+  &:after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136, 183, 213, 0);
+    border-top-color: #686867;
+    border-width: 10px;
+    margin-left: -10px;
+  }
 }
-.jobTitle:after {
-  top: 100%;
-  left: 50%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-  border-color: rgba(136, 183, 213, 0);
-  border-top-color: #686867;
-  border-width: 10px;
-  margin-left: -10px;
-}
+
 
 .jobBySkill{
   width:100%;
@@ -2093,6 +2097,79 @@ div.campCardTopBox:before {
   font-size: 15pt;
   padding-top:10px;
   margin-top:5px;
+
+}
+
+.no-margins{
+  margin:0px;
+  padding:0px;
+}
+
+.no-left-padding{
+  padding-left:0;
+}
+
+.no-right-padding{
+  padding-right:0;
+}
+
+
+
+//Need to set resuable class for selected box with pointed down and default box with no pointer
+.resumeTag {
+  position: relative;
+  width:100%;
+  float: right;
+  background-color: #686867;
+  color: #fefefe;
+  height:35px;
+  font-size: 15pt;
+  padding-top:10px;
+  margin-top:0 !important;
+  padding-left:0 !important;
+
+  &:after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136, 183, 213, 0);
+    border-top-color: #686867;
+    border-width: 10px;
+    margin-left: -10px;
+  }
+}
+
+.detailsTag{
+  width:100%;
+  float: left;
+  border-bottom-color: #686867;
+  border-width:1px;
+  border-style:solid;
+  color: #686867;
+  height:35px;
+  font-size: 15pt;
+  padding-top:10px;
+  margin-top:0;
+
+}
+
+.canidate-details-year{
+
+  position: relative;
+  margin-top: 15px;
+  padding-top:15px;
+  height:25px;
+  width:50px;
+  background-color: #a6a6a6;
+  color: white;
+  font-size:12px;
+  //z-index: -50;
+
 
 }
 
@@ -2132,31 +2209,37 @@ div.campCardTopBox:before {
   background-color: white;
 }
 
+.canidateTypeRow{
+
+  margin-left:20px;
+  margin-right:-20px;
+}
+
 .canidateType{
 
   border-right:1px solid;
   border-bottom:1px solid;
   height:50px;
   padding-top:15px;
+  background-color: white;
+    &.active{
+      background-color: black;
+      color: #ffffff;
 
-  &.active{
-    background-color: black;
-    color: #ffffff;
-
-    &:after {
-      top: 100%;
-      left: 50%;
-      border: solid transparent;
-      content: " ";
-      height: 0;
-      width: 0;
-      position: absolute;
-      pointer-events: none;
-      border-color: rgba(0, 0, 0, 0);
-      border-top-color: #A1A1A1;
-      border-width: 10px;
-      margin-left: -10px;
-    }
+      &:after {
+        top: 100%;
+        left: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(0, 0, 0, 0);
+        border-top-color: #000000;
+        border-width: 10px;
+        margin-left: -10px;
+      }
   }
 
 }
@@ -2165,16 +2248,20 @@ div.campCardTopBox:before {
 #criteriaDiv{
   //position:fixed;
   top:80px;
-  //z-index:-99;
+  z-index:0;
   left:5px;
 }
 
 .fix-to-top {
   position: fixed;
   top: 30px;
+  z-index: 100;
 }
 
+.canidateRow{
 
+  z-index: -99;
+}
 
 #criteriaResults{
   postion:relative;
@@ -2196,7 +2283,7 @@ div.campCardTopBox:before {
   color: #ffffff;
   font-size:16px;
   top:0px;
-
+  z-index: 25;
     &:after {
       top: 100%;
       left: 50%;

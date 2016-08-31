@@ -5,6 +5,6 @@
   angular
     .module('app.core')
     .constant('toastr', toastr)
-    .constant('ui.tinymce', ui.tinymce)
+    .constant('ui.tinymce', tinymce)
     .constant('moment', moment);
 })();

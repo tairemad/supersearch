@@ -28,15 +28,20 @@
     return directive;
 
     function link(scope, element, attr) {
-      var topClass = attr.htWidgetSetClassWhenAtTop  , // get CSS class from directive's attribute value
+      var topClass = attr.htWidgetSetClassWhenAtTop, // get CSS class from directive's attribute value
         offsetTop = element.offset().top; // get element's top relative to the document
+
       console.log('The value of showTopNav', scope.myvalue);
+
       $win.on('scroll', function (e) {
-        console.log('We are scrolling');
+
+        console.log('Offset ' ,offsetTop);
+        console.log('scroll to top',$win.scrollTop());
         console.log(scope.myvalue);
-        if ($win.scrollTop() >= offsetTop) {
-          element.addClass(topClass);
+
+        if ($win.scrollTop() + 60 >= offsetTop) {
           scope.myvalue = true;
+          element.addClass(topClass);
           scope.$apply();
         } else {
           element.removeClass(topClass);
