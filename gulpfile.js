@@ -517,7 +517,7 @@ function startBrowserSync(isDev, specRunner) {
     injectChanges: true,
     logFileChanges: true,
     logLevel: 'info',
-    logPrefix: 'hottowel',
+    logPrefix: 'Super Search',
     notify: true,
     reloadDelay: 0 //1000
   };
