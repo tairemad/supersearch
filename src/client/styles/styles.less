@@ -853,14 +853,11 @@ form {
     border-top: 0px solid #ddd;
   margin-right: 2em;
   margin-left:2em;
-  margin-top:1em;
-  margin-bottom:1em;
 }
 
 /* Widget */
 
 .widget {
-    margin-top: 10px;
     margin-bottom: 20px;
     background: #fff;
 }
@@ -1116,11 +1113,6 @@ form {
     .content {
         margin-left: -20px;
         margin-right: -20px;
-    }
-
-    .mainbar .matter {
-        padding-left: 20px;
-        padding-right: 20px;
     }
 
     .form-inline button {
@@ -2035,18 +2027,45 @@ div.campCardTopBox:before {
 
 .matchSquare{
   position: relative;
-  margin-top: 15px;
-  padding-top:15px;
-  height:50px;
-  width:50px;
+  padding:9px 2px;
+  height:35px;
+  width:35px;
   background-color: #5e5e5e;
   color: white;
-  font-size:22px;
-  z-index: -50;
-
+  font-size:18px;
+  z-index: 1;
+  margin-right: 5px;
 }
 
-
+.canidate-row{
+  margin: 0 20px;
+  padding-bottom: 10px;
+}
+p.canidate-name{
+  margin: 7px 0 !important;
+  display: inline-block;
+}
+p.canidate-title{
+  margin: 5px 0 7px !important;
+  font-size: 13px;
+}
+p.canidate-skills{
+  font-size: 13px;
+  line-height: 18px;
+}
+.canidate-likes{
+  button{
+    background: #a2a2a2;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    width: 123px;
+    margin-right: 5px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}
 /*.jobTitle{
   width:100%;
   float: right;
@@ -2259,13 +2278,15 @@ div.campCardTopBox:before {
 }
 
 .canidateRow{
-
   z-index: -99;
 }
 
+div.widget-header:first-child{
+  padding-top: 10px;
+}
+
 #criteriaResults{
-  postion:relative;
-  margin-top:15px;
+  position:relative;
 
 }
 
@@ -2319,15 +2340,53 @@ div.campCardTopBox:before {
 }
 
 .canidateMatchBlock {
-
   font-size:14px;
-  padding:12px;
-
-
 }
 
 .canidateMatchTitle{
+  font-size: 20px;
+}
 
-  font-size: 18px;
 
+.modalDialog {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 99999;
+  .modal-message{
+    width: 300px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    background: #fff;
+    h3{
+      line-height: 17px;
+      margin: 15px 0 10px;
+      font-size: 16px;
+    }
+    p{
+      margin-bottom: 15px!important;
+    }
+  }
+  a.closeM {
+    color: #333;
+    line-height: 25px;
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  button{
+    background-color: #424242;
+    color: #fff;
+    border: none;
+    width: 250px;
+    padding: 15px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
 }
