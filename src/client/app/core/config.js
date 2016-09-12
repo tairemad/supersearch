@@ -12,6 +12,19 @@
     toastr.options.positionClass = 'toast-bottom-right';
   }
 
+  core.config(mdIconConfig);
+  mdIconConfig.$inject = ['$mdIconProvider'];
+  /* @ngInject */
+
+  function mdIconConfig($mdIconProvider){
+
+    $mdIconProvider.defaultIconSet('app/icons.svg');
+    console.log($mdIconProvider);
+
+  }
+
+
+
   var config = {
     appErrorPrefix: '[superSearch Error] ',
     appTitle: 'superSearch'

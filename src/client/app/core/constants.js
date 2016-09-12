@@ -6,5 +6,6 @@
     .module('app.core')
     .constant('toastr', toastr)
     .constant('ui.tinymce', tinymce)
+    //.constant('mdIconProvider', $mdIconProvider)
     .constant('moment', moment);
 })();
