@@ -30,8 +30,8 @@
     "angular-animate": "^1.5.3",
     "angular-bootstrap": "^1.2.5",
     "ngtouch": "^1.0.1",
-    "angular-ui-tinymce": "^0.0.16"
-
+    "angular-ui-tinymce": "^0.0.16",
+    "angular-material": "^1.1.1"
   },
   "resolutions": {
     "angular": "1.5.3"
