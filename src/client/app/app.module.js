@@ -10,7 +10,8 @@
     'app.dashboard',
     'app.layout',
     'app.superSearchD',
-    'app.jobCampaigns'
+    'app.jobCampaigns',
+    'app.campaignSettings'
   ]);
 
 })();

@@ -88,9 +88,9 @@ body {
 }
 
     body .container {
-        width: 97%;
-        padding-left: 1.5%;
-        padding-right: 1.5%;
+        //width: 97%;
+        //padding-left: 1.5%;
+        //padding-right: 1.5%;
     }
 
 h1, h2, h3, h4, h5, h6 {
@@ -810,7 +810,7 @@ form {
 
     .mainbar .container {
         width: 100%;
-        padding: 0 !important;
+        //padding: 0 !important;
     }
 
 /* Pagination*/
@@ -851,8 +851,8 @@ form {
 
 .mainbar .matter {
     border-top: 0px solid #ddd;
-  margin-right: 2em;
-  margin-left:2em;
+  //margin-right: 2em;
+  //margin-left:2em;
 }
 
 /* Widget */
@@ -1105,14 +1105,14 @@ form {
     }
 
         body .container {
-            width: 95%;
-            padding-left: 2.5%;
-            padding-right: 2.5%;
+            //width: 95%;
+            //padding-left: 2.5%;
+            //padding-right: 2.5%;
         }
 
     .content {
-        margin-left: -20px;
-        margin-right: -20px;
+        //margin-left: -20px;
+        //margin-right: -20px;
     }
 
     .form-inline button {
@@ -2059,8 +2059,8 @@ p.canidate-skills{
     padding: 10px;
     color: #fff;
     border: none;
-    width: 123px;
-    margin-right: 5px;
+    width: 120px;
+    margin-right: 3px;
     &:last-child{
       margin-right: 0;
     }
@@ -2229,9 +2229,9 @@ p.canidate-skills{
 }
 
 .canidateTypeRow{
-
-  margin-left:20px;
-  margin-right:-20px;
+  //
+  //margin-left:20px;
+  //margin-right:-20px;
 }
 
 .canidateType{
@@ -2332,6 +2332,7 @@ div.widget-header:first-child{
 
 .addCriteriaSearchHeader{
   margin-bottom:8px;
+  margin-top: 10px;
 }
 
 .canidateCriteriaOptions{
@@ -2390,3 +2391,145 @@ div.widget-header:first-child{
     margin-bottom: 10px;
   }
 }
+
+section.mainbar#campaignSettings .container{
+  //width: 95%;
+  label.candidate-label{
+    margin-top: 10px;
+  }
+  input.campaign-input{
+    width: 95%;
+    padding: 10px !important;
+    margin: 5px 0 10px;
+  }
+  .candidate-row{
+    margin: 10px 10px;
+  }
+  .candidate-row-bottom{
+    margin: 10px 0;
+    background: #212121;
+    color: #fff;
+    min-height: 20px;
+  }
+  #dLabel{
+    background: #fff;
+    padding: 10px;
+    width: 95%;
+    border: 1px solid #ccc;
+    .caret{
+      margin-top: 5px;
+    }
+  }
+  ul.dropdown-menu{
+    width: 95%;
+  }
+  p{
+    line-height: 21px;
+  }
+  input[type=checkbox] {
+    position: relative;
+    cursor: pointer;
+    box-shadow: none;
+    border: 0;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    vertical-align: sub;
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  .checkbox:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+  }
+  .checkbox:checked:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    border: 2px solid transparent;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    width: 13px;
+    height: 6px;
+    margin-top: 5px;
+    border-color: blue;
+    border-width: 2px;
+    border-top-style: none;
+    border-right-style: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .pagination{
+    margin: 5px 0 0 65px;
+  }
+  .pagination>li>a, .pagination>li>span {
+    border-radius: 50% !important;
+    margin: 0 5px;
+    padding: 6px 7px;
+    background-color: #333;
+    border-color: #333;
+  }
+  .pagination > .active > a{
+    background-color: #ddd;
+    border-color: #ddd;
+  }
+
+}
+
+
+.super-modal-h2{
+  line-height: 25px;
+  margin-bottom: 7px;
+}
+
+.super-modal-number{
+  text-decoration: underline;
+  font-weight: 900;
+}
+.switch{
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+input.md-datepicker-input {
+  background: #fff;
+  padding: 10px !important;
+  width: 245px !important;
+  border: 1px solid #ccc !important;
+}
+
+.md-button.md-icon-button {
+  margin: 0 14px;
+}
+.md-datepicker-triangle-button{
+  top:9px;
+}
+
+md-slider-container md-input-container input[type="number"]{
+  height: 35px;
+  margin-top: -8px;
+}
+
+md-switch .md-container{
+  margin-right: 20px;
+}
+
+md-slider-container{
+  margin-top: 10px;
+  width: 91%;
+}
+
