@@ -6,10 +6,10 @@
         <input type="text" name="" class="campaign-input" placeholder="Enter Job Campaign Name">
       </div>
       <div class="col-xs-12 candidate-row">
-        <label>Auto-Message Candidates</label>
-        <div class="inset" ng-cloak>
-        <md-switch class="md-primary" md-no-ink aria-label="Switch No Ink" ng-model="data.cb5"></md-switch>
+        <p class="pull-left bold">Auto-Message Candidates</p>
+        <md-switch class="md-primary switch pull-right" md-no-ink aria-label="Switch No Ink" ng-model="data.cb5"></md-switch>
         </div>
+        <div class="col-xs-12 candidate-row">
         <p>When auto-message is on, all <span class="bold">"Matched"</span> candidates will receive your custom message. Select your <span class="bold">"Favorites"</span> to prioritize who will receive your message first. </p>
       </div>
       <div class="col-xs-12 candidate-row">
@@ -22,10 +22,7 @@
         </div>
       <div class="col-xs-12 candidate-row">
         <label class="candidate-label">Maximum daily sends</label>
-        <md-slider-container flex>
-          <md-input-container>
-            <input flex type="number" ng-model="bass" aria-label="bass" aria-controls="bass-slider">
-          </md-input-container>
+        <md-slider-container>
           <md-slider md-discrete ng-model="bass" min="0" max="100" step="10" aria-label="bass" class="md-primary"></md-slider>
           </md-slider>
         </md-slider-container>
@@ -62,7 +59,7 @@
         <label>Search Defaults</label>
         <p><input type="checkbox" class="checkbox"> Limit to job seekers authorized to work in the <br><span style="margin-left: 29px;">specified locations</span></p>
         <p><input type="checkbox" class="checkbox"> Include diversity candidates</p>
-        <p><input type="checkbox" class="checkbox"> Limit results to job seekers who are willing to relocate</p>
+        <p><input type="checkbox" class="checkbox"> Limit results to job seekers who are <br><span style="margin-left: 29px;">willing to relocate</span></p>
         <p><input type="checkbox" class="checkbox"> Include veteran candidates only</p>
         <p><input type="checkbox" class="checkbox"> Include private candidates</p>
       </div>
