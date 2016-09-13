@@ -11,7 +11,8 @@
     'app.layout',
     'app.superSearchD',
     'app.jobCampaigns',
-    'app.campaignSettings'
+    'app.campaignSettings',
+    'app.createMessage'
   ]);
 
 })();
