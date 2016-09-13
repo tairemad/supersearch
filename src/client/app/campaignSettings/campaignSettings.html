@@ -7,7 +7,7 @@
       </div>
       <div class="col-xs-12 candidate-row">
         <label>Auto-Message Candidates</label>
-        <div class="inset" ng-controller="SwitchDemoCtrl" ng-cloak>
+        <div class="inset" ng-cloak>
         <md-switch class="md-primary" md-no-ink aria-label="Switch No Ink" ng-model="data.cb5"></md-switch>
         </div>
         <p>When auto-message is on, all <span class="bold">"Matched"</span> candidates will receive your custom message. Select your <span class="bold">"Favorites"</span> to prioritize who will receive your message first. </p>
@@ -26,8 +26,7 @@
           <md-input-container>
             <input flex type="number" ng-model="bass" aria-label="bass" aria-controls="bass-slider">
           </md-input-container>
-          <md-slider md-discrete ng-model="bass" min="0" max="100" step="10" aria-label="bass" class="md-primary"
-                     md-vertical></md-slider>
+          <md-slider md-discrete ng-model="bass" min="0" max="100" step="10" aria-label="bass" class="md-primary"></md-slider>
           </md-slider>
         </md-slider-container>
       </div>
