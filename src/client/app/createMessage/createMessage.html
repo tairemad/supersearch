@@ -1,4 +1,44 @@
 <section id="dashboard-view" class="mainbar">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 message-row">
+          <div class="message-section">
+              <input type="text" placeholder="Create New Letter" class="subject-line subject-bold">
+               <span class="pull-right caret subject-caret"></span>
+            <input type="text" placeholder="Enter Subject Line" class="subject-line">
+            <div class="textarea">
+            <textarea ui-tinymce="tinymceOptions" ng-model="tinymceModel"></textarea>
+            </div>
+            <p class="bold"><input type="checkbox" class="checkbox"> Save message as Template</p>
+            <input type="text" placeholder="Run Campaign Once" class="subject-line subject-bold">
+            <span class="pull-right caret subject-caret"></span>
+            <input type="text" placeholder="Candidates Reply to Me" class="subject-line subject-bold">
+            <span class="pull-right caret subject-caret"></span>
 
+            <div class="message-follow clearfix">
+              <p class="pull-left">5 Day Follow-Up Message</p>
+              <span class="glyphicon glyphicon-menu-right pull-right"></span>
+              <md-switch class="md-primary switch pull-right" md-no-ink aria-label="Switch No Ink" ng-model="data.cb5"></md-switch>
+            </div>
+            <div class="message-follow clearfix">
+              <p class="pull-left">10 Day Follow-Up Message</p>
+              <span class="glyphicon glyphicon-menu-right pull-right"></span>
+              <md-switch class="md-primary switch pull-right" md-no-ink aria-label="Switch No Ink" ng-model="data.cb5"></md-switch>
+            </div>
+          </div>
+      </div>
+      <div class="col-xs-12 candidate-row-bottom">
+        <p class="pull-left"><span class="glyphicon glyphicon-menu-left"></span>Back</p>
+        <ul class="pagination">
+          <li class="active"><a href="#"> <span class="sr-only">(current)</span></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+        <p class="pull-right">Send <span class="glyphicon glyphicon-menu-right"></span></p>
+      </div>
+    </div>
+  </div>
 </section>
 
