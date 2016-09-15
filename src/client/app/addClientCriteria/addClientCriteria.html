@@ -3,7 +3,15 @@
     <div class="container" id="criteriaDiv">
       <div class="row">
         <div class="col-xs-12">
-          <div class="addCriteriaSearchHeader"><strong>Job Camp </strong></div>
+          <div class="addCriteriaSearchHeader">
+            <p><strong>Job Campaign Name </strong></p>
+            <p>Director of Engineering Search</p>
+          </div>
+          <div>
+            <button class="criteria-btn">Job Title</button>
+            <button class="criteria-btn">Skill</button>
+            <button class="criteria-btn">Location</button>
+          </div>
           <!-- input type="text" placeholder="Temporary/Part-time" name="canidateSearch" class="col-xs-12" -->
           <div class="input-group">
             <input type="text" class="form-control" placeholder="Search for...">
@@ -11,9 +19,45 @@
         <button class="btn btn-default addCriteriaBtn" type="button">Add</button>
       </span>
           </div>
+
+          <div class="location-search">
+            <div class="dropdown location-dropdown">
+              <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="pull-left bold">Country</span>
+                <span class="pull-right caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dLabel">
+                <li><a href="#">Select Item</a> </li>
+                <li><a href="#">Select Item</a> </li>
+                <li><a href="#">Select Item</a> </li>
+              </ul>
+            </div>
+            <div class="dropdown location-dropdown">
+              <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="pull-left bold">State - All States</span>
+                <span class="pull-right caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dLabel">
+                <li><a href="#">Select Item</a> </li>
+                <li><a href="#">Select Item</a> </li>
+                <li><a href="#">Select Item</a> </li>
+              </ul>
+            </div>
+            <input type="text" placeholder="Enter Zip Code" class="location-zip">
+          </div>
         </div>
         <div class="col-xs-12 canidateCriteriaOptions">
-          <strong>Advanced Options</strong> | <strong>Recent Criteria</strong>
+          <strong>Advanced Options</strong>
+
+          <div class="canidate-criteria">
+            <p>My Candidate Criteria</p>
+            <button class="single-criteria-btn">Boston <a href="#">x</a></button>
+            <button class="single-criteria-btn">Senior Engineerig Associate <a href="#">x</a></button>
+            <button class="single-criteria-btn">Python <a href="#">x</a></button>
+            <button class="single-criteria-btn">JavaScript <a href="#">x</a></button>
+            <button class="single-criteria-btn">Massachusetts <a href="#">x</a></button>
+            <button class="single-criteria-btn">Senior Developer <a href="#">x</a></button>
+          </div>
         </div>
       </div>
     </div>
@@ -116,8 +160,19 @@
                 </div>
               </div>
             </div>-->
-
             <div ht-widget-footer allow-collapse="true"></div>
+            <div class="col-xs-12 candidate-row-bottom">
+              <p class="pull-left"><span class="glyphicon glyphicon-menu-left"></span>Back</p>
+              <ul class="pagination">
+                <li class="active"><a href="#"> <span class="sr-only">(current)</span></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+              </ul>
+              <p class="pull-right">Next <span class="glyphicon glyphicon-menu-right"></span></p>
+            </div>
+
 
           </div>
         </div>
