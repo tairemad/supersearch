@@ -10,29 +10,102 @@
     <div class="row">
       <div class="col-xs-12 message-row">
           <div class="message-section">
-              <input type="text" placeholder="Create New Letter" class="subject-line subject-bold">
-               <span class="pull-right caret subject-caret"></span>
+            <div class="dropdown">
+              <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="pull-left bold">Create New Letter</span>
+                <span class="pull-right caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dLabel">
+                <li><a href="#">Select Item</a> </li>
+                <li><a href="#">Select Item</a> </li>
+                <li><a href="#">Select Item</a> </li>
+              </ul>
+            </div>
             <input type="text" placeholder="Enter Subject Line" class="subject-line">
             <div class="textarea">
             <textarea ui-tinymce="tinymceOptions" ng-model="tinymceModel"></textarea>
             </div>
             <p class="bold"><input type="checkbox" class="checkbox"> Save message as Template</p>
-            <input type="text" placeholder="Run Campaign Once" class="subject-line subject-bold">
-            <span class="pull-right caret subject-caret"></span>
+
+            <div class="dropdown message-drop">
+              <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="pull-left bold">Run Campaign Once</span>
+                <span class="pull-right caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dLabel">
+                <li><a href="#">Select Item</a> </li>
+                <li><a href="#">Select Item</a> </li>
+                <li><a href="#">Select Item</a> </li>
+              </ul>
+            </div>
            <div class="messageDate"> <md-datepicker ng-model="myDate" md-placeholder="Enter date"></md-datepicker> </div>
-            <input type="text" placeholder="Candidates Reply to Me" class="subject-line subject-bold">
-            <span class="pull-right caret subject-caret"></span>
+            <div class="dropdown">
+              <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="pull-left bold">Candidates Reply to Me</span>
+                <span class="pull-right caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dLabel">
+                <li><a href="#">Select Item</a> </li>
+                <li><a href="#">Select Item</a> </li>
+                <li><a href="#">Select Item</a> </li>
+              </ul>
+            </div>
+
             <input type="text" placeholder="Enter Job Description URL" class="subject-line">
 
-            <div class="message-follow clearfix">
+            <div class="message-follow clearfix" id="follow-Label-1">
               <p class="pull-left">5 Day Follow-Up Message</p>
               <span class="glyphicon glyphicon-menu-right pull-right"></span>
               <md-switch class="md-primary switch pull-right" md-no-ink aria-label="Switch No Ink" ng-model="data.cb5"></md-switch>
             </div>
-            <div class="message-follow clearfix">
+            <div id="follow-up-1">
+              <div class="dropdown">
+                <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="pull-left bold">Create New Letter</span>
+                  <span class="pull-right caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                  <li><a href="#">Select Item</a> </li>
+                  <li><a href="#">Select Item</a> </li>
+                  <li><a href="#">Select Item</a> </li>
+                </ul>
+              </div>
+              <input type="text" placeholder="Enter Subject Line" class="subject-line">
+              <div class="textarea">
+                <textarea ui-tinymce="tinymceOptions" ng-model="tinymceModel"></textarea>
+              </div>
+              <p class="bold"><input type="checkbox" class="checkbox"> Save message as Template</p>
+              <input type="text" placeholder="Enter Template Name" class="subject-line">
+              <label>Run Campaign Everyday Until</label>
+              <md-datepicker ng-model="myDate" md-placeholder="Enter date"></md-datepicker>
+            </div>
+
+            <div class="message-follow clearfix" id="follow-Label-2">
               <p class="pull-left">10 Day Follow-Up Message</p>
               <span class="glyphicon glyphicon-menu-right pull-right"></span>
               <md-switch class="md-primary switch pull-right" md-no-ink aria-label="Switch No Ink" ng-model="data.cb5"></md-switch>
+            </div>
+
+            <div id="follow-up-2">
+              <div class="dropdown">
+                <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="pull-left bold">Create New Letter</span>
+                  <span class="pull-right caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                  <li><a href="#">Select Item</a> </li>
+                  <li><a href="#">Select Item</a> </li>
+                  <li><a href="#">Select Item</a> </li>
+                </ul>
+              </div>
+              <input type="text" placeholder="Enter Subject Line" class="subject-line">
+              <div class="textarea">
+                <textarea ui-tinymce="tinymceOptions" ng-model="tinymceModel"></textarea>
+              </div>
+              <p class="bold"><input type="checkbox" class="checkbox"> Save message as Template</p>
+              <input type="text" placeholder="Enter Template Name" class="subject-line">
+              <label>Run Campaign Everyday Until</label>
+              <md-datepicker ng-model="myDate" md-placeholder="Enter date"></md-datepicker>
             </div>
           </div>
       </div>
@@ -51,3 +124,11 @@
   </div>
 </section>
 
+<script>
+  $('div#follow-Label-1').on('click', function () {
+      $('#follow-up-1').toggle();
+  });
+  $('div#follow-Label-2').on('click', function () {
+    $('#follow-up-2').toggle();
+  });
+</script>

@@ -2424,12 +2424,9 @@ ul.dropdown-menu{
   width: 100%;
 }
 input.subject-line{
-  border-bottom: 2px solid #ccc !important;
-  border-left: none !important;
-  border-right: none !important;
-  border-top: none !important;
   width: 100%;
-  margin-bottom: 12px;
+  margin: 12px 0;
+  padding: 10px !important;
   &::-webkit-input-placeholder{
     color: #9d9d9d;
   }
@@ -2441,8 +2438,8 @@ input.subject-line.subject-bold::-webkit-input-placeholder{
 }
 .subject-caret{
   position: relative;
-  top:-25px;
-  right: 7px;
+  top:-32px;
+  right: 11px;
 }
 .message-section{
   margin: 10px 0;
@@ -2616,22 +2613,15 @@ p.message-confirm{
 }
 
 .messageDate {
-  margin: 0px 0 25px;
+  margin: 25px 0;
   width: 100%;
-  button.md-datepicker-button.md-icon-button.md-button.md-ink-ripple {
-    display: none;
-  }
-  input {
-    border-top: none !important;
-    border-left: none !important;
-    border-right: none !important;
-    border-bottom: 2px solid #ccc !important;
-    width: 100% !important;
-    padding: 5px!important;
-  }
-  div.md-datepicker-input-container{
-    margin-left: 0;
-    width: 100%;
-  }
 }
 
+.message-drop{
+  margin: 12px 0;
+}
+
+#follow-up-1,#follow-up-2{
+  display: none;
+  margin: 10px 0;
+}
