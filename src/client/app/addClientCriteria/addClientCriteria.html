@@ -13,19 +13,15 @@
             <button class="criteria-btn" id="location">Location</button>
           </div>
           <!-- input type="text" placeholder="Temporary/Part-time" name="canidateSearch" class="col-xs-12" -->
+          <div class="arrow_box"></div>
+          <div class="arrow_box-1"></div>
+          <div class="arrow_box-2"></div>
           <div class="input-group" id="job-search">
-            <input type="text" class="form-control c-search-form" placeholder="Search Job Titles...">
+            <input type="text" class="form-control c-search-form" placeholder="Search...">
       <span class="input-group-btn">
         <button class="btn btn-default addCriteriaBtn" type="button">Add</button>
       </span>
           </div>
-          <div class="input-group" id="skill-search">
-            <input type="text" class="form-control c-search-form" placeholder="Search skills...">
-            <span class="input-group-btn">
-        <button class="btn btn-default addCriteriaBtn" type="button">Add</button>
-      </span>
-          </div>
-
           <div class="location-search">
             <div class="dropdown location-dropdown">
               <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -200,15 +196,15 @@
 
 <script>
   $('#location').on('click', function(){
-    $('.location-search').toggle();
+    $('.location-search , .arrow_box-2').toggle();
   });
 
   $('#job').on('click', function () {
-    $('#job-search').toggle();
+      $('#job-search, .arrow_box').toggle();
   });
 
   $('#skill').on('click', function () {
-    $('#skill-search').toggle();
+        $('#job-search, .arrow_box-1').toggle();
   });
 
 </script>

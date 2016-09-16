@@ -2676,11 +2676,62 @@ input.location-zip{
   width: 50%;
 }
 
-.location-search, #skill-search, #job-search{
-  display: none;
-}
 
 .c-search-form{
   width: 80%!important;
 }
 
+.arrow_box, .arrow_box-1, .arrow_box-2 {
+  position: relative;
+  background: #ffffff;
+  top:1px;
+  z-index: 5;
+}
+.arrow_box:after, .arrow_box:before{
+  top: -17px;
+  left: 13%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.arrow_box-1:after, .arrow_box-1:before{
+  top: -17px;
+  left: 33%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.arrow_box-2:after, .arrow_box-2:before{
+  top: -7px;
+  left: 52%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.arrow_box:after, .arrow_box-1:after, .arrow_box-2:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #ffffff;
+  border-width: 9px;
+  margin-left: -30px;
+}
+.arrow_box:before, .arrow_box-1:before, .arrow_box-2:before {
+  border-color: rgba(204, 204, 204, 0);
+  border-bottom-color: #ccc;
+  border-width: 8px;
+  margin-left: -29px;
+}
+
+#job-search,.location-search, .arrow_box, .arrow_box-1, .arrow_box-2{
+  display: none;
+}
