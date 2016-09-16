@@ -8,14 +8,20 @@
             <p>Director of Engineering Search</p>
           </div>
           <div>
-            <button class="criteria-btn">Job Title</button>
-            <button class="criteria-btn">Skill</button>
-            <button class="criteria-btn">Location</button>
+            <button class="criteria-btn" id="job">Job Title</button>
+            <button class="criteria-btn" id="skill">Skill</button>
+            <button class="criteria-btn" id="location">Location</button>
           </div>
           <!-- input type="text" placeholder="Temporary/Part-time" name="canidateSearch" class="col-xs-12" -->
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search for...">
+          <div class="input-group" id="job-search">
+            <input type="text" class="form-control c-search-form" placeholder="Search Job Titles...">
       <span class="input-group-btn">
+        <button class="btn btn-default addCriteriaBtn" type="button">Add</button>
+      </span>
+          </div>
+          <div class="input-group" id="skill-search">
+            <input type="text" class="form-control c-search-form" placeholder="Search skills...">
+            <span class="input-group-btn">
         <button class="btn btn-default addCriteriaBtn" type="button">Add</button>
       </span>
           </div>
@@ -44,6 +50,17 @@
               </ul>
             </div>
             <input type="text" placeholder="Enter Zip Code" class="location-zip">
+            <div class="dropdown location-range">
+              <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="pull-left bold">Within 0 Miles</span>
+                <span class="pull-right caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dLabel">
+                <li><a href="#">Select Item</a> </li>
+                <li><a href="#">Select Item</a> </li>
+                <li><a href="#">Select Item</a> </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="col-xs-12 canidateCriteriaOptions">
@@ -180,3 +197,18 @@
   </section>
 
 </section>
+
+<script>
+  $('#location').on('click', function(){
+    $('.location-search').toggle();
+  });
+
+  $('#job').on('click', function () {
+    $('#job-search').toggle();
+  });
+
+  $('#skill').on('click', function () {
+    $('#skill-search').toggle();
+  });
+
+</script>
