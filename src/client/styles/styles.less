@@ -1940,7 +1940,7 @@ a {
         }
 
     .btn {
-        margin: .2em;
+        //margin: .2em;
         width: 7em;
     }
 
@@ -2054,15 +2054,19 @@ p.canidate-skills{
   line-height: 18px;
 }
 .canidate-likes{
+  margin-top: 10px;
   button{
     background: #a2a2a2;
     padding: 10px;
     color: #fff;
     border: none;
-    width: 133px;
-    margin-right: 3px;
+    width: 32.33333%;
+    font-size: 15px;
     &:last-child{
-      margin-right: 0;
+      width: 33.33333%;
+      @media screen and (max-width: 320px){
+        width: 32.33333%;
+      }
     }
   }
 }
@@ -2651,7 +2655,12 @@ p.message-confirm{
   margin: 5px 3px 5px 0;
 }
 .location-search{
-  margin: 10px 0;
+  margin: 0px 0 10px;
+  @media (max-width: 320px){
+    .btn{
+      width: 4em;
+    }
+  }
 }
 
 .location-dropdown{
@@ -2660,25 +2669,37 @@ p.message-confirm{
 
 input.location-zip{
   display: inline-block !important;
-  padding: 10px !important;
+  padding: 8px !important;
   margin-right: 5px;
   float: left;
-  width: 48%;
+  width: 32%;
   &::-webkit-input-placeholder{
     font-weight: bold;
     color: #666;
+  }
+  @media screen and (max-width: 320px){
+    width: 38% !important;
   }
 }
 
 .location-range{
   display: inline-block;
-  float: right;
-  width: 50%;
+  float: left;
+  width: 41%;
+  button#dLabel{
+    padding: 8px;
+  }
+  @media screen and (max-width: 320px){
+    width: 40%;
+  }
 }
 
 
 .c-search-form{
   width: 80%!important;
+  @media screen and (max-width: 320px){
+    width: 67%!important;
+  }
 }
 
 .arrow_box, .arrow_box-1, .arrow_box-2 {
@@ -2700,24 +2721,30 @@ input.location-zip{
 
 .arrow_box-1:after, .arrow_box-1:before{
   top: -17px;
-  left: 33%;
+  left: 34%;
   border: solid transparent;
   content: " ";
   height: 0;
   width: 0;
   position: absolute;
   pointer-events: none;
+  @media screen and (max-width: 320px){
+    left: 42%;
+  }
 }
 
 .arrow_box-2:after, .arrow_box-2:before{
-  top: -7px;
-  left: 52%;
+  top: -16px;
+  left: 54%;
   border: solid transparent;
   content: " ";
   height: 0;
   width: 0;
   position: absolute;
   pointer-events: none;
+  @media screen and (max-width: 320px){
+    left:68%;
+  }
 }
 .arrow_box:after, .arrow_box-1:after, .arrow_box-2:after {
   border-color: rgba(255, 255, 255, 0);
@@ -2732,6 +2759,12 @@ input.location-zip{
   margin-left: -29px;
 }
 
-#job-search,.location-search, .arrow_box, .arrow_box-1, .arrow_box-2{
+.location-search, .arrow_box-1, .arrow_box-2, .hide, #job-search-2{
   display: none;
+}
+
+#job-search input{
+  @media screen and (max-width: 320px){
+    width: 100%!important;
+  }
 }

@@ -17,34 +17,18 @@
           <div class="arrow_box-1"></div>
           <div class="arrow_box-2"></div>
           <div class="input-group" id="job-search">
-            <input type="text" class="form-control c-search-form" placeholder="Search...">
+            <input type="text" class="form-control" placeholder="Search...">
       <span class="input-group-btn">
         <button class="btn btn-default addCriteriaBtn" type="button">Add</button>
       </span>
           </div>
+          <div class="input-group" id="job-search-2">
+            <input type="text" class="form-control c-search-form" placeholder="Search...">
+            <span class="input-group-btn">
+        <button class="btn btn-default addCriteriaBtn" type="button">Add</button>
+      </span>
+          </div>
           <div class="location-search">
-            <div class="dropdown location-dropdown">
-              <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="pull-left bold">Country</span>
-                <span class="pull-right caret"></span>
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dLabel">
-                <li><a href="#">Select Item</a> </li>
-                <li><a href="#">Select Item</a> </li>
-                <li><a href="#">Select Item</a> </li>
-              </ul>
-            </div>
-            <div class="dropdown location-dropdown">
-              <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="pull-left bold">State - All States</span>
-                <span class="pull-right caret"></span>
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dLabel">
-                <li><a href="#">Select Item</a> </li>
-                <li><a href="#">Select Item</a> </li>
-                <li><a href="#">Select Item</a> </li>
-              </ul>
-            </div>
             <input type="text" placeholder="Enter Zip Code" class="location-zip">
             <div class="dropdown location-range">
               <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -57,6 +41,9 @@
                 <li><a href="#">Select Item</a> </li>
               </ul>
             </div>
+            <span class="input-group-btn">
+        <button class="btn btn-default addCriteriaBtn" type="button">Add</button>
+      </span>
           </div>
         </div>
         <div class="col-xs-12 canidateCriteriaOptions">
@@ -117,22 +104,22 @@
               <div class="row canidateRow">
                 <div class="col-xs-12">
                   <div class="canidate-row">
-                  <div class="matchSquare text-center pull-left">
-                    9.9
-                  </div>
+                  <div class="matchSquare text-center pull-left">9.9</div>
                   <div class="canidateMatchBlock">
                     <p class="canidate-name"><span class="canidateMatchTitle">Andrea Testa - </span>  Boston, Ma</p>
                     <p class="canidate-title">Director of Enginering, Acme Corporation, <br> Rochester Institute, Bachelor of Engineering </p>
                     <p class="canidate-skills"><strong>Resume Update:</strong> 1 Month ago | <strong>Years of experience:</strong> 17 <br> <strong>Top Skills:</strong> Skill 1, Skill 2, Skill 3</p>
                   </div>
-
-                </div>
+                    </div>
+                    <div class="canidate-likes">
+                       <button><i class="mdi mdi-thumb-up"></i> Favorite</button>
+                      <button><i class="mdi mdi-thumb-down"></i> Skip</button>
+                      <button><i class="mdi mdi-block-helper"></i> Block</button>
+                      </div>
                 </div>
               </div>
-              <div class="canidate-likes">
-                <button><i class="mdi mdi-thumb-up"></i> Favorite</button> <button><i class="mdi mdi-thumb-down"></i> Skip</button> <button><i class="mdi mdi-block-helper"></i> Block</button>
               </div>
-            </div>
+        </div>
             <!--<div class="widget-content no-margins">
               <div class="row">
                 <div class="col-xs-6 no-right-padding">
@@ -200,11 +187,11 @@
   });
 
   $('#job').on('click', function () {
-      $('#job-search, .arrow_box').toggle();
+      $('#job-search, .arrow_box').toggleClass('hide');
   });
 
   $('#skill').on('click', function () {
-        $('#job-search, .arrow_box-1').toggle();
+        $('#job-search-2, .arrow_box-1').toggle();
   });
 
 </script>
