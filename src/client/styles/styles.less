@@ -934,6 +934,7 @@ form {
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   color: #040404;
+  margin-bottom: 10px;
 }
 
 
@@ -2434,6 +2435,9 @@ input.subject-line{
   &::-webkit-input-placeholder{
     color: #9d9d9d;
   }
+  @media (max-width: 320px){
+    width: 100%!important;
+  }
 }
 
 input.subject-line.subject-bold::-webkit-input-placeholder{
@@ -2472,7 +2476,7 @@ input[type=checkbox] {
   box-shadow: none;
   border: 0;
   margin: 0;
-  width: 20px;
+  width: 20px!important;
   height: 20px;
   vertical-align: sub;
   display: inline-block;
@@ -2617,8 +2621,13 @@ p.message-confirm{
 }
 
 .messageDate {
-  margin: 25px 0;
+  margin: 15px 0;
   width: 100%;
+  button.md-datepicker-button.md-icon-button.md-button.md-ink-ripple{
+    margin-left: -9px;
+    margin-right: 0;
+    padding: 0;
+  }
 }
 
 .message-drop{
