@@ -2,7 +2,6 @@
 
 **Generated from Super Search Angular**
 
->*Opinionated Angular style guide for teams by [@john_papa](//twitter.com/john_papa)*
 
 >More details about the styles and patterns used in this app can be found in my [Angular Style Guide](https://github.com/johnpapa/angularjs-styleguide) and my [Angular Patterns: Clean Code](http://jpapa.me/ngclean) course at [Pluralsight](http://pluralsight.com/training/Authors/Details/john-papa) and working in teams.
 
@@ -46,7 +45,8 @@
 Super Search Angular starter project
 
 ### Structure
-The structure also contains a gulpfile.js and a server folder. The server is there just so we can serve the app using node. Feel free to use any server you wish.
+The structure also contains a gulpfile.js and a server folder. The server is there just so we can serve the app using node. 
+Feel free to use any server you wish.
 
 	/src
 		/client
