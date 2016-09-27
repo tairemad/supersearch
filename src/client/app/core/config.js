@@ -18,7 +18,7 @@
 
   function mdIconConfig($mdIconProvider){
 
-    $mdIconProvider.defaultIconSet('app/icons.svg');
+    $mdIconProvider.defaultIconSet('/src/client/app/icons.svg');
     console.log($mdIconProvider);
 
   }
