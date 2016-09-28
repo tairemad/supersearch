@@ -244,8 +244,8 @@ a.back{
 }
 
 .modal-content{
-  width: 850px;
-  right: 20%;
+  // max-width: 850px;
+  // right: 20%;
   border-radius: 0;
 }
 
@@ -259,15 +259,22 @@ a.back{
     padding: 30px;
     h1{
       margin-top: 0;
+      font-size: 18px;
     }
     h4{
       color: @white;
+      font-size: 12px;
     }
   }
   .ex-mheader{
     background-color: @l-blue;
     color: #4b4b4b;
     min-height: 150px;
+    .m-header-content{
+      margin-top: 20px;
+      padding-left: 20px;
+      width: 90%;
+    }
   }
 }
 .modal-header .close {
@@ -277,4 +284,28 @@ a.back{
 button.close{
   opacity: 10;
   color: @m-blue;
+}
+.modal-body{
+  padding: 25px;
+}
+.resume-experience{
+  h4{
+    color: @m-blue;
+  }
+  hr{
+    margin-top: 0;
+    border-color: @m-blue;
+  }
+  .year{
+    color: @m-purple
+  }
+  h5{
+    margin-bottom: 2px;
+  }
+  h6{
+    margin-top: 2px;
+  }
+  .space{
+    margin-top: 20px;
+  }
 }
