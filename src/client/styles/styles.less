@@ -9,10 +9,10 @@
 
 @m-green: #46c054;
 @m-blue: #00aff0;
-@m-purple: #642891;
+@m-purple: #7945a0;
 @m-orange: #ff9430;
 @white: #fff;
-
+@l-blue: #d9f3fd;
 
 * {
   font-family: Roboto;
@@ -30,4 +30,251 @@ ht-top-nav.ng-isolate-scope nav.navbar.navbar-fixed-top.navbar-inverse{
   -ms-text-shadow: none !important;
   text-shadow: none !important;
 }
+#criteriaPage{
+  background-color: #ededed;
+}
+.select-header{
+  background-color: #622e8f;
+  color: @white;
+  font-weight: 300;
+  font-size: 20px;
+  padding: 10px;
+}
 
+.c-likes{
+  height: 80px;
+  border-bottom: 2px solid @m-blue;
+}
+
+.c-likes-border{
+  border-right: 1px solid @m-blue;
+}
+
+.bg-purple{
+  background-color: @m-purple;
+  color: @white;
+  padding: 13px;
+  font-size: 20px;
+}
+
+.bg-lblue{
+  background-color: #ccf1ff;
+  color: @m-blue;
+  padding: 13px;
+  font-size: 20px;
+}
+
+.num{
+  font-size: 37px;
+}
+.num-text{
+  vertical-align: super;
+}
+
+@media(max-width: 768px){
+  .num{
+    font-size: 28px;
+  }
+  .num-text{
+    font-size: 18px;
+  }
+}
+
+.c-card{
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.15);
+  background-color: @white;
+  padding: 10px;
+  width: 100%;
+  min-height: 285px;
+  margin-bottom: 15px;
+  h4{
+    font-size: 18px;
+    color: @m-purple;
+    margin-bottom: 0;
+  }
+  p{
+    font-size: 12px;
+    color: #4b4b4b;
+    line-height: 14px;
+  }
+}
+
+
+
+
+
+.bold{
+  font-weight: bold;
+}
+
+.bottom-space{
+  margin-bottom: 2px;
+}
+
+
+.circle{
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  display: inline-block;
+  text-align: center;
+  background-color: #4b4b4b;
+  border:none;
+  padding: 0;
+  &:before{
+    content: "\F1D8";
+    color: @white;
+    display: inline-block;
+    font: normal normal normal 24px/1 "Material Design Icons";
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+  }
+  &:hover{
+    background-color: @m-blue;
+  }
+}
+
+.icon-row{
+  width: 100%;
+  margin: 20px 15px;
+}
+
+.icons{
+  display: inline-block;
+  margin-right: 10px;
+  width: 20%;
+  text-align: center;
+  &:last-child{
+    margin-right: 0;
+  }
+  a{
+    color: #4b4b4b;
+    &:hover{
+      color: @m-blue;
+    }
+  }
+}
+
+
+button.experience{
+  border: 1px solid @m-blue;
+  background-color: @white;
+  color: @m-blue;
+  width: 100%;
+  height: 40px;
+}
+
+ul.nav-pagination li{
+  display: inline-block;
+  i{
+    vertical-align: sub;
+    color: @m-blue;
+  }
+  a{
+    color: #4b4b4b;
+  }
+}
+
+
+ul.nav-pagination li.active a{
+  color: @white;
+  background-color: @m-blue;
+  border-radius: 50px;
+  width: 20px;
+  height: 20px;
+  display: block;
+  text-align: center;
+}
+
+button.message{
+  border: 1px solid @m-purple;
+  background-color: @white;
+  color: @m-purple;
+  width: 165px;
+  height: 40px;
+}
+
+a.back{
+  color: @m-purple;
+  margin-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 10px;
+}
+
+.right-arrow, .left-arrow{
+  color: @m-blue;
+  position: relative;
+  top: 300px;
+  width: 50px;
+}
+.right-arrow{
+  margin-left: 30px;
+}
+
+.candidate-row-bottom{
+  margin: 10px 0;
+  background: @m-purple;
+  color: @white;
+  min-height: 20px;
+  padding: 10px;
+}
+
+.pagination{
+  margin: 5px 0 0 65px;
+}
+.pagination>li>a, .pagination>li>span {
+  border-radius: 50% !important;
+  margin: 0 5px;
+  padding: 6px 7px;
+  background-color: transparent;
+  border-color: @m-orange;
+}
+.pagination > .active > a{
+  background-color: @m-orange;
+  border-color: @m-orange;
+}
+
+.dropdown-menu{
+  left: -130px;
+}
+
+.modal-content{
+  width: 850px;
+  right: 20%;
+  border-radius: 0;
+}
+
+.modal-header{
+  border-bottom: none;
+  padding: 0;
+  .name-mheader{
+    background-color: @m-blue;
+    color: @white;
+    min-height: 150px;
+    padding: 30px;
+    h1{
+      margin-top: 0;
+    }
+    h4{
+      color: @white;
+    }
+  }
+  .ex-mheader{
+    background-color: @l-blue;
+    color: #4b4b4b;
+    min-height: 150px;
+  }
+}
+.modal-header .close {
+  margin-top: 5px;
+}
+
+button.close{
+  opacity: 10;
+  color: @m-blue;
+}
