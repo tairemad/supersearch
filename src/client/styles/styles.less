@@ -29,11 +29,14 @@ body{
     -webkit-text-shadow: none !important;
     -ms-text-shadow: none !important;
     text-shadow: none !important;
+    display: none;
 }
+
+nav.navbar.navbar-fixed-top.navbar-inverse{display: none;}
 #criteriaPage{
   background-color: #ededed;
 }
-#campaignSettings{
+#campaignSettings, #create-message{
   background-color: @white;
 }
 .select-header{
@@ -103,7 +106,9 @@ body{
     line-height: 14px;
   }
 }
-
+.form-control{
+  border-radius: 0;
+}
 
 
 
@@ -195,8 +200,8 @@ ul.nav-pagination li.active a{
 
 button.message{
   border: 1px solid @m-purple;
-  background-color: @white;
-  color: @m-purple;
+  background-color: @m-purple;
+  color: @white;
   width: 165px;
   height: 40px;
 }
@@ -318,7 +323,7 @@ button.close{
 
 input{
   width: 100%;
-  padding: 10px;
+  padding: 8px;
   border: 1px solid #ccc;
 }
 
@@ -332,7 +337,7 @@ input{
 
 input.md-datepicker-input {
   background: #fff;
-  padding: 10px !important;
+  padding: 8px !important;
   width: 500px !important;
   border: 1px solid #ccc !important;
   &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -349,6 +354,9 @@ input.md-datepicker-input {
   }
   @media (max-width: 860px){
     width: 260px !important;
+  }
+  @media (max-width: 320px){
+    width: 207px !important;
   }
 }
 
@@ -424,13 +432,21 @@ md-slider-container{
 .md-datepicker-input-container{
   border-bottom: none;
 }
+
+.md-datepicker-triangle-button.md-button.md-icon-button{
+  right: 9px;
+}
+
+button.md-datepicker-button.md-icon-button.md-button.md-ink-ripple{
+  margin: 0;
+}
 #dLabel{
   background-color: transparent;
-  padding: 10px;
+  padding: 6px;
   width: 100%;
   border: 1px solid #ccc;
   .caret{
-    margin-top: 5px;
+    margin-top: 8px;
   }
 }
 ul.dropdown-menu{
@@ -505,4 +521,32 @@ input[type=checkbox] {
   padding: 0 15px;
   margin-top: 30px;
 }
+.message-follow{
+  background: @m-blue;
+  color:#fff;
+  width: 100%;
+  padding: 10px;
+  height: 40px;
+  margin-bottom: 5px;
+  p{
+    display: inline-block;
+  }
+  md-switch.md-checked.md-primary .md-bar{
+    background-color: @l-blue;
+  }
+  span.glyphicon.glyphicon-menu-right{
+    margin-top: 4px;
+  }
+}
 
+.space-bottom{
+  margin-bottom: 15px;
+}
+
+.space-top{
+  margin-top: 15px;
+}
+
+#follow-up-1, #follow-up-2{
+  display: none;
+}

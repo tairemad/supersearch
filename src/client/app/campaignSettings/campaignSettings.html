@@ -6,8 +6,12 @@
     <div class="row spacing">
     <div class="col-xs-12 col-sm-6 col-md-6">
       <div class="candidate-row">
-        <label class="candidate-label">Job Campaign Name</label>
-        <input type="text" name="" class="campaign-input" placeholder="Enter Job Campaign Name">
+        <div class="form-group has-error has-feedback">
+          <label class="control-label" for="inputError2">Job Campaign Name</label>
+          <input type="text" class="form-control" id="inputError2" aria-describedby="inputError2Status" placeholder="Enter Job Campaign Name">
+          <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+          <span id="inputError2Status" class="sr-only">(error)</span>
+        </div>
       </div>
       <div class="clearfix candidate-row">
         <p class="pull-left bold" style="margin-right: 10px;">Auto-Message Candidates</p>
@@ -83,14 +87,14 @@
 
 
 
-    <div class="row" style="margin-top: 40px; padding-bottom: 30px;">
-      <div class="hidden-xs col-md-4 pull-right">
+    <div class="row spacing hidden-xs" style="margin-top: 40px; padding-bottom: 30px;">
+      <div class="col-md-3 pull-right">
         <a href="#" class="back">Go back</a> <button class="message pull-right">Save and Continue</button>
       </div>
     </div>
 
-    <div class="row">
-      <div class="visible-xs col-xs-12 candidate-row-bottom">
+    <div class="row visible-xs">
+      <div class="col-xs-12 candidate-row-bottom">
         <p class="pull-left"><span class="glyphicon glyphicon-menu-left"></span>Back</p>
         <ul class="pagination text-center">
           <li class="active"><a href="#"> <span class="sr-only">(current)</span></a></li>
