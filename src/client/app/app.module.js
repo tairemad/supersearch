@@ -8,7 +8,8 @@
     'app.layout',
     'app.superSearchD',
     'app.campaignSettings',
-    'app.createMessage'
+    'app.createMessage',
+    'app.viewCampaign'
   ]);
 
 })();
