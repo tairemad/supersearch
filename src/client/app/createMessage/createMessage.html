@@ -1,4 +1,4 @@
-<section id="create-message" class="mainbar">
+<section class="mainbar" id="create-message">
   <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12 col-md-12 select-header">Message Candidates</div>
@@ -19,14 +19,14 @@
         </div>
         <div class="candidate-row">
           <label>Subject Line</label>
-          <input type="text">
+          <input type="text" class="form-control">
 
           </div>
         </div>
 
       <div class="col-xs-12 col-sm-6 col-md-6">
         <p><input type="checkbox" class="checkbox check-space"> Save Message as Template</p>
-          <input type="text" placeholder="Enter Template Name">
+          <input type="text" class="form-control" placeholder="Enter Template Name">
 
         </div>
       </div>
@@ -69,7 +69,7 @@
           </ul>
         </div>
         <div class="candidate-row">
-        <input type="text" placeholder="Enter Job Description URL" class="subject-line">
+        <input type="text" placeholder="Enter Job Description URL" class="form-control">
           </div>
       </div>
       </div>
@@ -93,7 +93,7 @@
               <li><a href="#">Select Item</a> </li>
             </ul>
           </div>
-          <input type="text" placeholder="Enter Subject Line" class="space-bottom">
+          <input type="text" placeholder="Enter Subject Line" class="form-control space-bottom">
           <div class="textarea space-bottom">
             <textarea ui-tinymce="tinymceOptions" ng-model="tinymceModel"></textarea>
           </div>
@@ -117,7 +117,7 @@
               <li><a href="#">Select Item</a> </li>
             </ul>
           </div>
-          <input type="text" placeholder="Enter Subject Line" class="space-bottom">
+          <input type="text" placeholder="Enter Subject Line" class="form-control space-bottom">
           <div class="textarea space-bottom">
             <textarea ui-tinymce="tinymceOptions" ng-model="tinymceModel"></textarea>
           </div>

@@ -1,4 +1,4 @@
-<section id="ss-dashboard" class="mainbar">
+<section class="mainbar" id="ss-dashboard">
   <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12 col-md-12 select-header">SuperSearch</div>
@@ -250,8 +250,9 @@
 
     <div class="clearfix row spacing">
       <div class="col-xs-12 col-sm-12 col-md-12">
-        <div class="col-xs-6 col-sm-6 col-md-6 matched-crit text-center" style="padding-left: 0;">
+        <div class="col-xs-6 col-sm-6 col-md-6 matched-crit text-center bd-btm" style="padding-left: 0;">
           <p><i class="mdi mdi-account-star mdi-36px hidden-xs"></i><span class="crit-num">38</span><span class="crit-text">Matched</span></p>
+        <div class="tri-border-2"></div>
         </div>
         <div class="col-xs-6 col-sm-6 col-md-6 selected-crit text-center" style="padding-right: 0;">
           <p> <i class="mdi mdi-account-multiple-plus mdi-36px hidden-xs"></i><span class="crit-num">38</span><span class="crit-text">Selected</span></p>
@@ -568,7 +569,7 @@
                 <li><a href="#">Select Item</a> </li>
               </ul>
             </div>
-            <input type="text" placeholder="Enter Subject Line" class="space-bottom">
+            <input type="text" placeholder="Enter Subject Line" class="form-control space-bottom">
             <div class="textarea space-bottom">
               <textarea ui-tinymce="tinymceOptions" ng-model="tinymceModel"></textarea>
             </div>
@@ -594,7 +595,7 @@
                 <li><a href="#">Select Item</a> </li>
               </ul>
             </div>
-            <input type="text" placeholder="Enter Subject Line" class="space-bottom">
+            <input type="text" placeholder="Enter Subject Line" class="form-control space-bottom">
             <div class="textarea space-bottom">
               <textarea ui-tinymce="tinymceOptions" ng-model="tinymceModel"></textarea>
             </div>
@@ -618,7 +619,7 @@
                 <li><a href="#">Select Item</a> </li>
               </ul>
             </div>
-            <input type="text" placeholder="Enter Subject Line" class="space-bottom">
+            <input type="text" placeholder="Enter Subject Line" class="form-control space-bottom">
             <div class="textarea space-bottom">
               <textarea ui-tinymce="tinymceOptions" ng-model="tinymceModel"></textarea>
             </div>
@@ -636,6 +637,7 @@
       </div>
     </div>
     <div class="row spacing hidden-xs" style="margin-top: 40px; padding-bottom: 30px;">
+      <hr class="hr-color">
       <div class="col-md-4 pull-right">
         <a href="#" class="back">Save as Draft</a><button class="message pull-right">Launch Campaign</button>
       </div>

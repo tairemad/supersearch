@@ -6,15 +6,87 @@
     </div>
   </div>
 
+   <!-- advanced criteria section-->
 
-  <div class="row" style="padding: 0;">
-    <div class="col-xs-4 col-md-4 c-likes c-likes-border bg-purple text-center"><i class="mdi mdi-account-star mdi-48px hidden-xs"></i><span class="num">40</span> <span class="num-text">Matched</span></div>
+    <div class="row" style="margin-top: 20px;">
+      <div class="col-xs-12 col-md-12">
+        <div class="addCriteriaSearchHeader">
+          <h4>Job Campaign Name </h4>
+          <p>&ndash; Director of Engineering Search</p>
+        </div>
+        <div>
+          <div class="criteria-btn active-crit" id="job">Job Title</div>
+          <div class="criteria-btn" id="skill">Skill</div>
+          <div class="criteria-btn" id="location">Location</div>
+        </div>
+        <!-- input type="text" placeholder="Temporary/Part-time" name="canidateSearch" class="col-xs-12" -->
+        <div class="arrow_box"></div>
+        <div class="arrow_box-1"></div>
+        <div class="arrow_box-2"></div>
+        <div class="input-group" id="job-search">
+          <input type="text" class="form-control" placeholder="Search...">
+          <span class="input-group-btn">
+        <button class="btn btn-default addCriteriaBtn" type="button">Add</button>
+      </span>
+        </div>
+        <div class="input-group" id="job-search-2">
+          <input type="text" class="form-control" placeholder="Search...">
+          <span class="input-group-btn">
+        <button class="btn btn-default addCriteriaBtn" type="button">Add</button>
+      </span>
+        </div>
+        <div class="location-search">
+          <input type="text" placeholder="Enter Zip Code" class="form-control location-zip">
+          <div class="dropdown location-range">
+            <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="pull-left bold">Within 0 Miles</span>
+              <span class="pull-right caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dLabel">
+              <li><a href="#">Select Item</a> </li>
+              <li><a href="#">Select Item</a> </li>
+              <li><a href="#">Select Item</a> </li>
+            </ul>
+          </div>
+          <span class="input-group-btn">
+        <button class="btn btn-default addCriteriaBtn" type="button">Add</button>
+      </span>
+        </div>
+
+      <div class="col-xs-12 col-md-12 canidateCriteriaOptions">
+        <strong>Advanced Options</strong>
+
+        <div class="canidate-criteria">
+          <p>My Candidate Criteria</p>
+          <button class="single-criteria-btn">Boston <a href="#">x</a></button>
+          <button class="single-criteria-btn">Senior Engineerig Associate <a href="#">x</a></button>
+          <button class="single-criteria-btn">Python <a href="#">x</a></button>
+          <button class="single-criteria-btn">JavaScript <a href="#">x</a></button>
+          <button class="single-criteria-btn">Massachusetts <a href="#">x</a></button>
+          <button class="single-criteria-btn">Senior Developer <a href="#">x</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+    <!--end criteria section-->
+
+  <div class="row" style="padding: 0; margin-top: 20px;">
+    <div class="col-xs-4 col-md-4 c-likes bd-btm bg-purple text-center "><i class="mdi mdi-account-star mdi-48px hidden-xs"></i><span class="num">40</span> <span class="num-text">Matched</span><div class="tri-border"></div></div>
     <div class="col-xs-4 col-md-4 c-likes c-likes-border bg-white  text-center"> <i class="mdi mdi-account-multiple-plus mdi-48px hidden-xs"></i><span class="num">4</span> <span class="num-text">Selected</span></div>
     <div class="col-xs-4 col-md-4 c-likes bg-white text-center"><i class="mdi mdi-account-multiple-minus mdi-48px hidden-xs"></i> <span class="num">0</span> <span class="num-text">Blocked</span></div>
   </div>
 
 
-    <div class="row">
+    <div class="row" style="margin-left:40px; margin-top: 30px;">
       <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">auto-message on</button>
 
       <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
@@ -768,6 +840,7 @@
       </div>
 
       <div class="row hidden-xs " style="margin-top: 20px; padding-bottom: 30px;">
+        <hr class="hr-color">
         <div class="col-md-4 pull-right">
           <a href="#" class="back">Go back</a> <button class="message pull-right">Create Message</button>
         </div>
@@ -798,3 +871,25 @@
 </section>
 <link href="https://cdn.materialdesignicons.com/1.7.12/css/materialdesignicons.min.css" rel="stylesheet">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
+
+<script>
+  $('#location').on('click', function(){
+    $('.location-search , .arrow_box-2').toggle();
+    $('#job, #skill').removeClass('active-crit');
+    $(this).addClass('active-crit');
+  });
+
+  $('#job').on('click', function () {
+    $('#job-search, .arrow_box').toggleClass('hide');
+    $('#location, #skill').removeClass('active-crit');
+    $(this).addClass('active-crit');
+  });
+
+  $('#skill').on('click', function () {
+    $('#job-search-2, .arrow_box-1').toggle();
+    $('#job, #location').removeClass('active-crit');
+    $(this).addClass('active-crit');
+  });
+
+</script>
