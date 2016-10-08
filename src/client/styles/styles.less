@@ -45,11 +45,19 @@ nav.navbar.navbar-fixed-top.navbar-inverse{display: none;}
   font-weight: 300;
   font-size: 20px;
   padding: 10px 10px 10px 30px;
+  a{
+    color: @white;
+  }
 }
 
 .c-likes{
   height: 55px;
   border-bottom: 2px solid @m-blue;
+  border-top: 2px solid @m-blue;
+  border-right: 1px solid @m-blue;
+  &:last-child{
+    border-right: none;
+  }
   @media (max-width: 767px){
     height: 40px;
   }
@@ -759,6 +767,7 @@ input[type=checkbox] {
 .matched-crit{
   background-color: @m-purple;
   color: @white;
+  border-right: 1px solid @m-blue;
   i{
     vertical-align: baseline;
     color: rgba(255,255,255,0.3);
@@ -970,9 +979,14 @@ span.crit-text{
 }
 .addCriteriaBtn{
   height: 34px;
-  background-color: #4A4A4A;
+  background-color: @m-purple;
+  border: 1px solid @m-purple;
   color: white;
   border-radius: 0;
+  &:hover{
+    color: @white;
+    background-color: @m-purple;
+  }
 }
 
 .canidateCriteriaOptions{
@@ -1028,45 +1042,29 @@ input.location-zip{
   border-color: @m-blue;
 }
 
-.tri-border{
-  position: relative;
-  background-color: @m-blue;
-  &:after{
-    content: '';
-    z-index: 1;
-    position: absolute;
-    top:100%;
-    width: 0;
-    height: 0;
-    border-top: 11px solid @m-blue;
-    border-left: 13px solid transparent;
-    border-right: 13px solid transparent;
-    @media (max-width: 768px){
-      top: 9px;
-    }
-    @media (max-width: 375px){
-      top: 10px;
-    }
-  }
-}
-
-.tri-border-2{
-  position: relative;
-  background-color: @m-blue;
-  &:after{
-    content: '';
-    z-index: 1;
-    position: absolute;
-    top:100%;
-    width: 0;
-    height: 0;
-    border-top: 11px solid @m-blue;
-    border-left: 13px solid transparent;
-    border-right: 13px solid transparent;
-  }
-}
-
 .bd-btm{
   border-bottom: 3px solid @m-blue;
+  &:after {
+    content: '';
+    z-index: 1;
+    position: absolute;
+    top: 100%;
+    right: 50%;
+    width: 0;
+    height: 0;
+    border-top: 11px solid @m-blue;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+  }
+}
+
+.criteria-sect{
+  background-color: @white;
+  padding: 0 30px;
+}
+
+.crit-tabs{
+  margin: 10px 0;
+  padding-left: 15px;
 }
 
