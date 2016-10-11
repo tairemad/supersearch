@@ -16,7 +16,7 @@
       {
         state: 'superSearchD',
         config: {
-          url: '/superSearchD',
+          url: '/',
           templateUrl: 'app/superSearchD/superSearchD.html',
           controller: 'superSearchDController',
           controllerAs: 'vm',

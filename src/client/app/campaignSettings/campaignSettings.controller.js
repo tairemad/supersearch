@@ -5,9 +5,9 @@
     .module('app.campaignSettings')
     .controller('CampaignSettingsController', CampaignSettingsController);
 
-  CampaignSettingsController.$inject = ['$q', 'dataservice', 'logger', '$scope'];
+  CampaignSettingsController.$inject = ['$q','$state', 'dataservice', 'logger', '$scope'];
   /* @ngInject */
-  function CampaignSettingsController($q, dataservice, logger, $scope) {
+  function CampaignSettingsController($q , $state , dataservice, logger, $scope) {
     var vm = this;
     vm.news = {
       title: 'superSearch',
@@ -20,12 +20,23 @@
     $scope.headerRules.showTopNav = false;
 //   vm.scrollTo = scrollTo(target);
 
+       vm.addClientCriteria = function(){
+         console.log('state.go');
+         $state.go('addClientCriteria');
+       };
+
+       vm.goBack = function(){
+         console.log('going back');
+         window.history.back();
+
+       };
+
     activate();
 
     function activate() {
       var promises = [getMessageCount(), getPeople()];
       return $q.all(promises).then(function() {
-        logger.info('Activated CampaignSettings View');
+        //logger.info('Activated CampaignSettings View');
       });
     }
 

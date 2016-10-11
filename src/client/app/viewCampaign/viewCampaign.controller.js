@@ -29,7 +29,7 @@
     activate();
 
     function activate() {
-      logger.info('Activated viewCampaign View');
+      //logger.info('Activated viewCampaign View');
     }
   }
 })();

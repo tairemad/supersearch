@@ -39,7 +39,7 @@
     activate();
 
     function activate() {
-      logger.info('Activated jobCampaigns View');
+     // logger.info('Activated jobCampaigns View');
     }
 
     vm.getContent = function() {
