@@ -635,8 +635,8 @@ input[type=checkbox] {
 }
 
 .spacing{
-  padding: 0 15px;
   margin-top: 30px;
+  padding: 0 15px;
 }
 .message-follow{
   background: #e3e3e3;
@@ -770,6 +770,8 @@ input[type=checkbox] {
   background-color: @m-purple;
   color: @white;
   border-right: 1px solid @m-blue;
+  border-top: 1px solid @m-blue;
+  max-height: 57px;
   i{
     vertical-align: baseline;
     color: rgba(255,255,255,0.3);
@@ -778,9 +780,44 @@ input[type=checkbox] {
   }
 }
 
+.matched-crit-sm{
+  background-color: @m-purple;
+  color: @white;
+  border-right: 1px solid @m-blue;
+  border-top: 1px solid @m-blue;
+  max-height: 54px;
+  i{
+    vertical-align: baseline;
+    color: rgba(255,255,255,0.3);
+    position: relative;
+    top:9px;
+  }
+}
+
+.selected-crit-sm{
+  background-color: @white;
+  color: @m-blue;
+  border-top: 1px solid @m-blue;
+  border-bottom: 1px solid @m-blue;
+  max-height: 54px;
+  i{
+    vertical-align: baseline;
+    color: rgba(0,175,240,0.3);
+    position: relative;
+    top:9px;
+  }
+}
+
+.crit-pos{
+  position: absolute;
+  top:92%;
+  z-index: 1;
+}
 .selected-crit{
   background-color: @white;
   color: @m-blue;
+  border-top: 1px solid @m-blue;
+  border-bottom: 1px solid @m-blue;
   i{
     vertical-align: baseline;
     color: rgba(0,175,240,0.3);
@@ -801,8 +838,10 @@ span.crit-text{
 
 .matched-crit-section{
   background-color: #e3e3e3;
-  padding: 20px 5px 15px;
+  padding: 50px 5px 15px;
   overflow: auto;
+  position: relative;
+  margin-top: -9px;
 }
 .dash-header-left{
   background-color: @m-blue;
@@ -1063,7 +1102,7 @@ input.location-zip{
 }
 
 .bd-btm{
-  border-bottom: 3px solid @m-blue;
+  border-bottom: 8px solid @m-blue;
   &:after {
     content: '';
     z-index: 1;
@@ -1072,9 +1111,25 @@ input.location-zip{
     right: 50%;
     width: 0;
     height: 0;
-    border-top: 11px solid @m-blue;
-    border-left: 13px solid transparent;
-    border-right: 13px solid transparent;
+    border-top: 20px solid @m-blue;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+  }
+}
+
+.bd-btm-cc{
+  border-bottom: 8px solid @m-blue;
+  &:after {
+    content: '';
+    z-index: 1;
+    position: absolute;
+    top: 100%;
+    right: 50%;
+    width: 0;
+    height: 0;
+    border-top: 18px solid @m-blue;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
   }
 }
 
@@ -1094,4 +1149,12 @@ input.location-zip{
 
 .purple-txt{
   color: @m-purple;
+}
+
+
+.can-cri-card{
+  position: relative;
+  background-color: @white;
+  width: 100%;
+  min-height: 200px;
 }

@@ -24,10 +24,13 @@
         <p class="pull-left bold" style="margin-right: 10px;">Auto-Message Candidates</p>
         <md-switch class="md-primary switch" md-no-ink aria-label="Switch No Ink" ng-model="data.cb5"></md-switch>
       </div>
-      <div class="candidate-row">
+      <div class="canidate-row">
+        <a href="#" class="show-content">Advanced Configuration</a>
+      </div>
+      <div class="candidate-row adv-cont hide">
         <p>When auto-message is on, all <span class="bold">"Matched"</span> candidates will receive your custom message. Select your <span class="bold">"Favorites"</span> to prioritize who will receive your message first. </p>
       </div>
-      <div class="candidate-row">
+      <div class="candidate-row adv-cont hide">
         <label class="candidate-label">Everyday Until</label>
         <div layout-gt-xs="row">
           <div flex-gt-xs>
@@ -35,14 +38,14 @@
           </div>
         </div>
       </div>
-      <div class="candidate-row">
+      <div class="candidate-row adv-cont hide">
         <label class="candidate-label">Maximum daily sends</label>
         <md-slider-container>
           <md-slider md-discrete ng-model="bass" min="0" max="100" step="10" aria-label="bass" class="md-primary"></md-slider>
           </md-slider>
         </md-slider-container>
       </div>
-      <div class="candidate-row">
+      <div class="candidate-row adv-cont hide">
         <label class="candidate-label">Exclude Messaging to Candidates:</label>
         <div class="dropdown">
           <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -58,7 +61,7 @@
       </div>
     </div>
     <div class="col-xs-12 col-sm-6 col-md-6">
-      <div class="candidate-row">
+      <div class="candidate-row adv-cont hide">
         <label class="candidate-label">Search Engine</label>
         <div class="dropdown">
           <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -72,7 +75,7 @@
           </ul>
         </div>
       </div>
-      <div class="candidate-row">
+      <div class="candidate-row adv-cont hide">
         <label>Search Defaults</label>
         <p><input type="checkbox" class="checkbox check-space"> Limit to job seekers authorized to work in the specified locations</p>
         <p><input type="checkbox" class="checkbox check-space"> Limit results to job seekers who are willing to relocate</p>
@@ -96,8 +99,11 @@
 
     <div class="row spacing hidden-xs" style="margin-top: 40px; padding-bottom: 30px;">
       <hr class="hr-color">
+      <div class="col-md-12" style="margin-bottom: 4px;">
+        <div class="col-md-1 pull-right"> <a href="#" class="back">Next</a></div>
+      </div>
       <div class="col-md-3 pull-right">
-        <a href="#" class="back">Go back</a> <button class="message pull-right">Save and Continue</button>
+        <a href="#" class="back">Go back</a> <button class="message pull-right">Manage Candidates</button>
       </div>
     </div>
 
@@ -118,3 +124,8 @@
 </section>
 <link href="https://cdn.materialdesignicons.com/1.7.12/css/materialdesignicons.min.css" rel="stylesheet">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+<script>
+  $('.show-content').on('click', function () {
+      $('.adv-cont').toggleClass('hide');
+  });
+</script>
