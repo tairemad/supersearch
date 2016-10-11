@@ -18,7 +18,7 @@
         config: {
           url: '/campaignSettings',
           templateUrl: 'app/campaignSettings/campaignSettings.html',
-          controller: 'AddClientCriteriaController',
+          controller: 'CampaignSettingsController',
           controllerAs: 'vm',
           title: 'campaignSettings',
           settings: {

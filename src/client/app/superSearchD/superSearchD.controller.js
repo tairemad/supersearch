@@ -5,10 +5,18 @@
     .module('app.superSearchD')
     .controller('superSearchDController', superSearchDController);
 
-  superSearchDController.$inject = ['logger','$window'];
+  superSearchDController.$inject = ['logger','$window','$state'];
   /* @ngInject */
-  function superSearchDController(logger,$window) {
+  function superSearchDController(logger,$window,$state) {
     var vm = this;
+
+    vm.createCampaign = function(){
+      console.log('state.go');
+      $state.go('campaignSettings');
+
+    };
+
+    console.log('I loaded the controller');
 
     vm.alertMe = function() {
       setTimeout(function() {
@@ -29,7 +37,7 @@
     activate();
 
     function activate() {
-      logger.info('Activated superSearchD View');
+      //logger.info('Activated superSearchD View');
     }
   }
 })();

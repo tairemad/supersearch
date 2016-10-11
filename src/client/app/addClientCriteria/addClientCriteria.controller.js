@@ -5,9 +5,9 @@
     .module('app.addClientCriteria')
     .controller('AddClientCriteriaController', AddClientCriteriaController);
 
-  AddClientCriteriaController.$inject = ['$q', 'dataservice', 'logger', '$scope'];
+  AddClientCriteriaController.$inject = ['$q','$state', 'dataservice', 'logger', '$scope'];
   /* @ngInject */
-  function AddClientCriteriaController($q, dataservice, logger, $scope) {
+  function AddClientCriteriaController($q, $state, dataservice, logger, $scope) {
     var vm = this;
     vm.news = {
       title: 'superSearch',
@@ -20,12 +20,17 @@
     $scope.headerRules.showTopNav = false;
 //   vm.scrollTo = scrollTo(target);
 
+    vm.createMessage = function(){
+      console.log('state.go');
+      $state.go('createMessage');
+    };
+
     activate();
 
     function activate() {
       var promises = [getMessageCount(), getPeople()];
       return $q.all(promises).then(function() {
-        logger.info('Activated AddClientCriteria View');
+        //logger.info('Activated AddClientCriteria View');
       });
     }
 
