@@ -1,12 +1,9 @@
-<section id="ss-dashboard" class="mainbar">
+<section class="mainbar" id="ss-dashboard">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-xs-12 col-md-12 select-header">SuperSearch</div>
-    </div>
-    <div class="row spacing">
-      <div class="col-xs-12 col-sm-12 col-md-12">
-        <h4 style="margin-bottom: 0;">Software Engineer <i class="mdi mdi-border-color"></i> </h4>
-        <p><small>Created 10 days ago</small></p>
+      <div class="col-xs-12 col-md-12 select-header">
+        Super Search  <span style="font-size: 12px;">- Director of Engineering <i class="mdi mdi-border-color"></i></span>
+        <a href="#" class="pull-right"><i class="mdi mdi-window-close"></i></a>
       </div>
     </div>
     <div class="row spacing">
@@ -213,7 +210,7 @@
           </p>
 
           <div class="col-xs-12 col-sm-4 col-md-4">
-            <p class="pull-left bold" style="margin-right: 10px;">Auto-Message Candidates</p>
+            <p class="pull-left bold auto-mess">Auto-Message Candidates</p>
             <md-switch class="md-primary switch" md-no-ink aria-label="Switch No Ink" ng-model="data.cb5"></md-switch>
           </div>
           <div class="col-xs-12 col-sm-8 col-md-8">
@@ -234,30 +231,36 @@
 
     <div class="clearfix row spacing">
       <div class="col-xs-12 col-sm-12 col-md-12">
-        <div class="ss-card">
+        <div class="can-cri-card">
           <p class="ss-header">
             <span>Candidate Criteria</span>
             <span class="pull-right"><i class="mdi mdi-border-color"></i></span>
           </p>
-          <div class="col-xs-12 col-sm-12 col-md-12 criteria-content">
-            <div class="criteria">Angular</div> <div class="criteria">Graphic Design</div> <div class="criteria">HTML</div> <div class="criteria">JavaScript</div> <div class="criteria">Temporary/Part-time</div> <div class="criteria">Angular</div> <div class="criteria">Graphic Design</div> <div class="criteria">HTML</div> <div class="criteria">JavaScript</div> <div class="criteria">Temporary/Part-time</div> <div class="criteria">Angular</div> <div class="criteria">Graphic Design</div> <div class="criteria">HTML</div> <div class="criteria">JavaScript</div> <div class="criteria">Temporary/Part-time</div> <div class="criteria">Angular</div> <div class="criteria">Graphic Design</div> <div class="criteria">HTML</div> <div class="criteria">JavaScript</div> <div class="criteria">Temporary/Part-time</div>
+          <div class="col-xs-12 col-sm-12 col-md-12 criteria-content" style="margin-bottom: 20px;">
+            <button class="single-criteria-btn"><span class="chips">SK</span>Angular</button> <button class="single-criteria-btn"><span class="chips">SK</span>Graphic Design</button> <button class="single-criteria-btn"><span class="chips">SK</span>HTML</button> <button class="single-criteria-btn"><span class="chips">SK</span>JavaScript</button> <button class="single-criteria-btn"><span class="chips">SK</span>Temporary/Part-time</button>
+            <button class="single-criteria-btn"><span class="chips">SK</span>Angular</button> <button class="single-criteria-btn"><span class="chips">SK</span>Graphic Design</button> <button class="single-criteria-btn"><span class="chips">SK</span>HTML</button> <button class="single-criteria-btn"><span class="chips">SK</span>JavaScript</button> <button class="single-criteria-btn"><span class="chips">SK</span>Temporary/Part-time</button>
+            <button class="single-criteria-btn"><span class="chips">SK</span>Angular</button> <button class="single-criteria-btn"><span class="chips">SK</span>Graphic Design</button> <button class="single-criteria-btn"><span class="chips">SK</span>HTML</button> <button class="single-criteria-btn"><span class="chips">SK</span>JavaScript</button> <button class="single-criteria-btn"><span class="chips">SK</span>Temporary/Part-time</button>
+
           </div>
+
+
+          <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="col-xs-offset-2 col-xs-4  col-sm-offset-2 col-sm-4 col-md-offset-2 col-md-4 matched-crit-sm text-center" style="padding-left: 0;">
+              <p><i class="mdi mdi-account-star mdi-36px hidden-xs"></i><span class="crit-num">38</span><span class="crit-text">Matched</span></p>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 selected-crit-sm text-center" style="padding-right: 0;">
+              <p> <i class="mdi mdi-account-multiple-plus mdi-36px hidden-xs"></i><span class="crit-num">38</span><span class="crit-text">Selected</span></p>
+            </div>
 
         </div>
       </div>
+
+
     </div>
 
 
-    <div class="clearfix row spacing">
-      <div class="col-xs-12 col-sm-12 col-md-12">
-        <div class="col-xs-6 col-sm-6 col-md-6 matched-crit text-center" style="padding-left: 0;">
-          <p><i class="mdi mdi-account-star mdi-36px hidden-xs"></i><span class="crit-num">38</span><span class="crit-text">Matched</span></p>
-        </div>
-        <div class="col-xs-6 col-sm-6 col-md-6 selected-crit text-center" style="padding-right: 0;">
-          <p> <i class="mdi mdi-account-multiple-plus mdi-36px hidden-xs"></i><span class="crit-num">38</span><span class="crit-text">Selected</span></p>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-12">
+
+     <!-- <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="matched-crit-section">
           <div class="hidden-xs col-sm-1 col-md-1">
             <div class="left-arrow-m"><i class="mdi mdi-chevron-left mdi-48px" aria-hidden="true"></i></div>
@@ -278,23 +281,19 @@
                 <p class="bottom-space"><span class="bold">Resume Updated:</span>  02/14/2016</p>
                 <p class="bottom-space"><span class="bold">Experience:</span> 17 years</p>
                 <p><span class="bold">Top Skills:</span> Pearl, Management Skills, Agile</p>
-                <div class="icon-row"><div class="icons"><a href="#"><i class="mdi mdi-thumb-up mdi-24px"></i> </a></div><div class="icons"><a href="#"><i class="mdi mdi-thumb-down mdi-24px"></i></a> </div><div class="icons"><a href="#"><i class="mdi mdi-block-helper mdi-24px"></i> </a></div><div class="icons dropdown"><button class="circle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
+                <div class="icon-row"><div class="icons"><a href="#"><i class="mdi mdi-thumb-up mdi-24px"></i> </a></div><div class="icons"><a href="#"><i class="mdi mdi-download mdi-24px"></i></a> </div><div class="icons"><a href="#"><i class="mdi mdi-file-send mdi-24px"></i> </a></div><div class="icons dropdown"><button class="circle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
                   <ul class="dropdown-menu dropdown-menu-r" aria-labelledby="dropdownMenu1">
-                    <li><a href="#">View Resume</a></li>
+                    <li><a href="#">Message Candidate</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="#">Download Resume</a></li>
+                    <li><a href="#">Skip Candidate</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="#">Print Resume</a></li>
+                    <li><a href="#">Block from all campaigns</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="#">Forward Resume</a></li>
+                    <li><a href="#">Add Note</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="#">Add to Folder</a></li>
+                    <li><a href="#">Move to Folder</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="#">Add to Priority Message Send</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Block from this Campaign</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Block from and future Campaign</a></li>
+                    <li><a href="#">Assign to another Campaign</a></li>
                   </ul>
                 </div></div>
                 <button class="experience" data-toggle="modal" data-target="#myModal">View Details</button>
@@ -363,23 +362,19 @@
                 <p class="bottom-space"><span class="bold">Resume Updated:</span>  02/14/2016</p>
                 <p class="bottom-space"><span class="bold">Experience:</span> 17 years</p>
                 <p><span class="bold">Top Skills:</span> Pearl, Management Skills, Agile</p>
-                <div class="icon-row"><div class="icons"><a href="#"><i class="mdi mdi-thumb-up mdi-24px"></i> </a></div><div class="icons"><a href="#"><i class="mdi mdi-thumb-down mdi-24px"></i></a> </div><div class="icons"><a href="#"><i class="mdi mdi-block-helper mdi-24px"></i> </a></div><div class="icons dropdown"><button class="circle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
+                <div class="icon-row"><div class="icons"><a href="#"><i class="mdi mdi-thumb-up mdi-24px"></i> </a></div><div class="icons"><a href="#"><i class="mdi mdi-download mdi-24px"></i></a> </div><div class="icons"><a href="#"><i class="mdi mdi-file-send mdi-24px"></i> </a></div><div class="icons dropdown"><button class="circle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
                   <ul class="dropdown-menu dropdown-menu-r" aria-labelledby="dropdownMenu1">
-                    <li><a href="#">View Resume</a></li>
+                    <li><a href="#">Message Candidate</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="#">Download Resume</a></li>
+                    <li><a href="#">Skip Candidate</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="#">Print Resume</a></li>
+                    <li><a href="#">Block from all campaigns</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="#">Forward Resume</a></li>
+                    <li><a href="#">Add Note</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="#">Add to Folder</a></li>
+                    <li><a href="#">Move to Folder</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="#">Add to Priority Message Send</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Block from this Campaign</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Block from and future Campaign</a></li>
+                    <li><a href="#">Assign to another Campaign</a></li>
                   </ul>
                 </div></div>
                 <button class="experience" data-toggle="modal" data-target="#myModal">View Details</button>
@@ -448,23 +443,19 @@
                 <p class="bottom-space"><span class="bold">Resume Updated:</span>  02/14/2016</p>
                 <p class="bottom-space"><span class="bold">Experience:</span> 17 years</p>
                 <p><span class="bold">Top Skills:</span> Pearl, Management Skills, Agile</p>
-                <div class="icon-row"><div class="icons"><a href="#"><i class="mdi mdi-thumb-up mdi-24px"></i> </a></div><div class="icons"><a href="#"><i class="mdi mdi-thumb-down mdi-24px"></i></a> </div><div class="icons"><a href="#"><i class="mdi mdi-block-helper mdi-24px"></i> </a></div><div class="icons dropdown"><button class="circle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
+                <div class="icon-row"><div class="icons"><a href="#"><i class="mdi mdi-thumb-up mdi-24px"></i> </a></div><div class="icons"><a href="#"><i class="mdi mdi-download mdi-24px"></i></a> </div><div class="icons"><a href="#"><i class="mdi mdi-file-send mdi-24px"></i> </a></div><div class="icons dropdown"><button class="circle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
                   <ul class="dropdown-menu dropdown-menu-r" aria-labelledby="dropdownMenu1">
-                    <li><a href="#">View Resume</a></li>
+                    <li><a href="#">Message Candidate</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="#">Download Resume</a></li>
+                    <li><a href="#">Skip Candidate</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="#">Print Resume</a></li>
+                    <li><a href="#">Block from all campaigns</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="#">Forward Resume</a></li>
+                    <li><a href="#">Add Note</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="#">Add to Folder</a></li>
+                    <li><a href="#">Move to Folder</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="#">Add to Priority Message Send</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Block from this Campaign</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Block from and future Campaign</a></li>
+                    <li><a href="#">Assign to another Campaign</a></li>
                   </ul>
                 </div></div>
                 <button class="experience" data-toggle="modal" data-target="#myModal">View Details</button>
@@ -539,7 +530,7 @@
         </div>
       </div>
 
-    </div>
+    </div>-->
 
 
 
@@ -568,7 +559,7 @@
                 <li><a href="#">Select Item</a> </li>
               </ul>
             </div>
-            <input type="text" placeholder="Enter Subject Line" class="space-bottom">
+            <input type="text" placeholder="Enter Subject Line" class="form-control space-bottom">
             <div class="textarea space-bottom">
               <textarea ui-tinymce="tinymceOptions" ng-model="tinymceModel"></textarea>
             </div>
@@ -578,7 +569,7 @@
 
 
           <div class="message-follow clearfix" id="follow-Label-1">
-            <p class="pull-left">5 Day Follow-Up</p>
+            <p class="pull-left">5 Day Follow Up</p>
             <span class="glyphicon glyphicon-menu-right pull-right"></span>
             <md-switch class="md-primary switch" md-no-ink aria-label="Switch No Ink" ng-model="data.cb5"></md-switch>
           </div>
@@ -594,7 +585,7 @@
                 <li><a href="#">Select Item</a> </li>
               </ul>
             </div>
-            <input type="text" placeholder="Enter Subject Line" class="space-bottom">
+            <input type="text" placeholder="Enter Subject Line" class="form-control space-bottom">
             <div class="textarea space-bottom">
               <textarea ui-tinymce="tinymceOptions" ng-model="tinymceModel"></textarea>
             </div>
@@ -602,7 +593,7 @@
           </div>
 
           <div class="message-follow clearfix" id="follow-Label-2">
-            <p class="pull-left">10 Day Follow-Up</p>
+            <p class="pull-left">10 Day Follow Up</p>
             <span class="glyphicon glyphicon-menu-right pull-right"></span>
             <md-switch class="md-primary switch" md-no-ink aria-label="Switch No Ink" ng-model="data.cb5"></md-switch>
           </div>
@@ -618,7 +609,7 @@
                 <li><a href="#">Select Item</a> </li>
               </ul>
             </div>
-            <input type="text" placeholder="Enter Subject Line" class="space-bottom">
+            <input type="text" placeholder="Enter Subject Line" class="form-control space-bottom">
             <div class="textarea space-bottom">
               <textarea ui-tinymce="tinymceOptions" ng-model="tinymceModel"></textarea>
             </div>
@@ -635,14 +626,15 @@
         <p class="pull-right" style="font-size: 12px;">Your account is presently set as a Demo Account. Note that emails to candidates will not be sent.</p>
       </div>
     </div>
-    <div class="row spacing hidden-xs" style="margin-top: 40px; padding-bottom: 30px;">
-      <div class="col-md-3 pull-right">
-        <a href="#" class="back">Save as Draft</a><button class="message pull-right">Launch Campaign</button>
+    <div class="row hidden-xs" style="padding-bottom: 30px;">
+      <hr class="hr-color">
+      <div class="col-md-4 pull-right">
+        <a href="#" class="back">Back to Dashboard</a><button class="message pull-right">Pause Campaign</button>
       </div>
     </div>
     <div class="row spacing visible-xs" style="margin-bottom: 30px;">
-      <div class="col-md-3 text-center">
-        <a href="#" class="back">Save as Draft</a> <button class="launch center-block">Launch Campaign</button>
+      <div class="col-md-4 text-center">
+        <a href="#" class="back">Back to Dashboard</a> <button class="launch center-block">Pause Campaign</button>
       </div>
     </div>
 

@@ -2,19 +2,105 @@
   <div class="container-fluid">
   <div class="row">
     <div class="col-xs-12 col-md-12 select-header">
-      Select Candidates
+      Manage Candidates <span style="font-size: 12px;">for Director of Engineering</span>
+      <a href="#" class="pull-right"><i class="mdi mdi-window-close"></i></a>
+    </div>
+  </div>
+
+   <!-- advanced criteria section-->
+
+    <div class="row criteria-sect">
+
+
+        <div class="hidden-xs col-md-12" style="padding: 20px 0;">
+          <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 882.85 55.9"><defs><style>.cls-1,.cls-2,.cls-3{isolation:isolate;}.cls-2,.cls-3{font-size:18px;font-family:Roboto-Regular, Roboto;}.cls-2,.cls-6{fill:#00aff0;}.cls-3,.cls-8{fill:#bdbdbd;}.cls-4{filter:url(#filter-2);}.cls-5{fill:#fff;}.cls-10,.cls-5{stroke:#bdbdbd;}.cls-7{filter:url(#filter-4);}.cls-10,.cls-9{fill:none;stroke-linecap:square;}.cls-9{stroke:#00aff0;}</style><filter id="filter-2" x="-49" y="-48.6" width="200" height="200" name="filter-2"><feMorphology result="shadowSpreadOuter1" operator="dilate" radius="0.5" in="SourceAlpha"/><feOffset result="shadowOffsetOuter1" dy="2" in="shadowSpreadOuter1"/><feGaussianBlur result="shadowBlurOuter1" stdDeviation="2" in="shadowOffsetOuter1"/><feComposite result="shadowBlurOuter1" operator="out" in="shadowBlurOuter1" in2="SourceAlpha"/><feColorMatrix values="0 0 0 0 0.77 0 0 0 0 0.77 0 0 0 0 0.77 0 0 0 0.5 0" in="shadowBlurOuter1"/></filter><filter id="filter-4" x="-49" y="-48.6" width="200" height="200" name="filter-4"><feMorphology result="shadowSpreadOuter1" operator="dilate" radius="0.5" in="SourceAlpha"/><feOffset result="shadowOffsetOuter1" dy="2" in="shadowSpreadOuter1"/><feGaussianBlur result="shadowBlurOuter1" stdDeviation="2" in="shadowOffsetOuter1"/><feComposite result="shadowBlurOuter1" operator="out" in="shadowBlurOuter1" in2="SourceAlpha"/><feColorMatrix values="0 0 0 0 0.77 0 0 0 0 0.77 0 0 0 0 0.77 0 0 0 0.5 0" in="shadowBlurOuter1"/></filter></defs><title>Group 2</title><g id="Page-1"><g id="Artboard"><g id="Group-13"><g id="Group-2"><g id="Campaign-Settings" class="cls-1"><text class="cls-2" transform="translate(0 15.4)">Campaign Settings</text></g><g id="Manage-Candidates" class="cls-1"><text class="cls-2" transform="translate(364 15.4)">Manage Candidates</text></g><g id="Message-Candidates" class="cls-1"><text class="cls-3" transform="translate(713 15.4)">Message Candidates</text></g><g id="Group-Copy"><g id="Oval-4"><g class="cls-4"><circle cx="71" cy="46.4" r="9"/></g><circle id="path-1" class="cls-5" cx="71" cy="46.4" r="9"/></g><circle id="Oval-1-Copy-2" class="cls-6" cx="71" cy="46.4" r="4"/></g><g id="Group-Copy-2"><g id="Oval-4-2" data-name="Oval-4"><g class="cls-7"><circle cx="437" cy="44.4" r="9"/></g><circle id="path-3" class="cls-5" cx="437" cy="44.4" r="9"/></g><circle id="Oval-1-Copy-2-2" data-name="Oval-1-Copy-2" class="cls-6" cx="437" cy="44.4" r="4"/></g><circle id="Oval-1-Copy-3" class="cls-8" cx="808" cy="45.4" r="4"/><path id="Line-Copy" class="cls-9" d="M83.5,45.5h331" transform="translate(1 1.4)"/><path id="Line-Copy-2" class="cls-10" d="M458.5,44.5h331" transform="translate(1 1.4)"/></g></g></g></g></svg>
+        </div>
+
+
+
+    <div class="row" style="margin-top: 20px;">
+      <div class="col-xs-12 col-md-12">
+        <div class="crit-tabs">
+          <div class="criteria-btn active-crit" id="job">Job Title</div>
+          <div class="criteria-btn" id="skill">Skill</div>
+          <div class="criteria-btn" id="location">Location</div>
+        </div>
+        <!-- input type="text" placeholder="Temporary/Part-time" name="canidateSearch" class="col-xs-12" -->
+        <div class="arrow_box"></div>
+       <!-- <div class="arrow_box-1"></div>
+        <div class="arrow_box-2"></div>-->
+        <div class="col-md-12">
+        <div class="col-xs-12 col-sm-12 col-md-6">
+        <div class="input-group" id="job-search">
+          <input type="text" class="form-control" placeholder="Search...">
+          <span class="input-group-btn">
+        <button class="btn btn-default addCriteriaBtn" type="button">Add</button>
+      </span>
+        </div>
+        </div>
+        </div>
+       <!-- <div class="col-md-12">
+        <div class="col-xs-12 col-sm-12 col-md-6">
+        <div class="input-group" id="job-search-2">
+          <input type="text" class="form-control" placeholder="Search...">
+          <span class="input-group-btn">
+        <button class="btn btn-default addCriteriaBtn" type="button">Add</button>
+      </span>
+        </div>
+          </div>
+          </div>-->
+        <!--<div class="location-search">
+          <input type="text" placeholder="Enter Zip Code" class="form-control location-zip">
+          <div class="dropdown location-range">
+            <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="pull-left bold">Within 0 Miles</span>
+              <span class="pull-right caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dLabel">
+              <li><a href="#">Select Item</a> </li>
+              <li><a href="#">Select Item</a> </li>
+              <li><a href="#">Select Item</a> </li>
+            </ul>
+          </div>
+          <span class="input-group-btn">
+        <button class="btn btn-default addCriteriaBtn" type="button">Add</button>
+      </span>
+        </div>
+-->
+      <div class="col-xs-12 col-md-12 canidateCriteriaOptions">
+        <strong>Advanced Options</strong>
+
+        <div class="canidate-criteria">
+          <p>My Candidate Criteria</p>
+          <button class="single-criteria-btn"><span class="chips">SK</span> Boston <a href="#">x</a></button>
+          <button class="single-criteria-btn"><span class="chips">SK</span> Senior Engineerig Associate <a href="#">x</a></button>
+          <button class="single-criteria-btn"><span class="chips">LC</span> Python <a href="#">x</a></button>
+          <button class="single-criteria-btn"><span class="chips">SK</span> JavaScript <a href="#">x</a></button>
+          <button class="single-criteria-btn"><span class="chips">JT</span> Massachusetts <a href="#">x</a></button>
+          <button class="single-criteria-btn"><span class="chips">SK</span> Senior Developer <a href="#">x</a></button>
+        </div>
+      </div>
     </div>
   </div>
 
 
+    </div>
+
+
+
+
+
+
+    <!--end criteria section-->
+
   <div class="row" style="padding: 0;">
-    <div class="col-xs-4 col-md-4 c-likes c-likes-border bg-purple text-center"><i class="mdi mdi-account-star mdi-48px hidden-xs"></i><span class="num">40</span> <span class="num-text">Matched</span></div>
+    <div class="col-xs-4 col-md-4 c-likes bd-btm bg-purple text-center "><i class="mdi mdi-account-star mdi-48px hidden-xs"></i><span class="num">40</span> <span class="num-text">Matched</span></div>
     <div class="col-xs-4 col-md-4 c-likes c-likes-border bg-white  text-center"> <i class="mdi mdi-account-multiple-plus mdi-48px hidden-xs"></i><span class="num">4</span> <span class="num-text">Selected</span></div>
     <div class="col-xs-4 col-md-4 c-likes bg-white text-center"><i class="mdi mdi-account-multiple-minus mdi-48px hidden-xs"></i> <span class="num">0</span> <span class="num-text">Blocked</span></div>
   </div>
 
 
-    <div class="row">
+    <div class="row" style="margin-left:40px; margin-top: 30px;">
       <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">auto-message on</button>
 
       <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
@@ -72,23 +158,106 @@
             <p class="bottom-space"><span class="bold">Resume Updated:</span>  02/14/2016</p>
             <p class="bottom-space"><span class="bold">Experience:</span> 17 years</p>
             <p><span class="bold">Top Skills:</span> Pearl, Management Skills, Agile</p>
-            <div class="icon-row"><div class="icons"><a href="#"><i class="mdi mdi-thumb-up mdi-24px"></i> </a></div><div class="icons"><a href="#"><i class="mdi mdi-thumb-down mdi-24px"></i></a> </div><div class="icons"><a href="#"><i class="mdi mdi-block-helper mdi-24px"></i> </a></div><div class="icons dropdown"><button class="circle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
+            <div class="icon-row"><div class="icons"><a href="#"><i class="mdi mdi-thumb-up mdi-24px"></i> </a></div><div class="icons"><a href="#"><i class="mdi mdi-download mdi-24px"></i></a> </div><div class="icons"><a href="#"><i class="mdi mdi-file-send mdi-24px"></i> </a></div><div class="icons dropdown"><button class="circle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
               <ul class="dropdown-menu dropdown-menu-r" aria-labelledby="dropdownMenu1">
-                <li><a href="#">View Resume</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Download Resume</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Print Resume</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Forward Resume</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Add to Folder</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Add to Priority Message Send</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Block from this Campaign</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Block from and future Campaign</a></li>
+                <li><a href="#">Message Candidate</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Skip Candidate</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Block from all campaigns</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Add Note</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Move to Folder</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Assign to another Campaign</a></li>
+              </ul>
+            </div></div>
+            <button class="experience" data-toggle="modal" data-target="#myModal">See Experience</button>
+
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <div class="col-xs-5 col-sm-4 col-md-4 name-mheader">
+                      <h1>Laura Hart</h1>
+                      <h4>Boston, MA</h4>
+                      <div class="hidden-xs icon-row">
+                        <div class="icons-sm"><a href="#"><i class="mdi mdi-thumb-up mdi-24px"></i> </a></div>
+                        <div class="icons-sm"><a href="#"><i class="mdi mdi-download mdi-24px"></i></a> </div>
+                        <div class="icons-sm"><a href="#"><i class="mdi mdi-file-send mdi-24px"></i> </a></div>
+                        <div class="icons-sm"><button class="circle-sm"></button></div>
+                        </div>
+                      </div>
+                    <div class="col-xs-7 col-sm-8 col-md-8 ex-mheader">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <div class="m-header-content">
+                        <p>Director of Engineering, Acme Corporation, Rochester Institute, Bachelor of Engineering</p>
+                        <p class="bottom-space"><span class="bold">Resume Updated:</span>  02/14/2016</p>
+                        <p class="bottom-space"><span class="bold">Experience:</span> 17 years</p>
+                        <p><span class="bold">Top Skills:</span> Pearl, Management Skills, Agile</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-body">
+                    <div class="resume-experience">
+                      <h4>Experience</h4>
+                      <hr>
+                      <h5><span class="year">2016 - 2017</span> Director, Software Engineering</h5>
+                      <h6>ACME Systems, Concord, MA</h6>
+                      <p>Cupcake ipsum dolor sit amet caramels apple pie powder pie. I love pie donut sweet roll chocolate cheesecake donut tootsie roll. Topping icing cake fruitcake marzipan I love ice cream. Candy canes danish dessert wafer biscuit sweet roll bear claw. Sweet I love dessert powder halvah fruitcake sweet roll. I love gummi bears lemon drops icing biscuit. Dragée cupcake toffee cotton candy donut caramels topping. Cheesecake liquorice fruitcake marzipan marzipan. Bear claw marzipan topping icing carrot cake cheesecake ice cream lemon drops. Dessert jelly caramels candy canes oat cake sugar plum cake tiramisu. Lollipop powder gummi bears gingerbread cupcake lollipop marzipan liquorice. Jelly-o biscuit ice cream.</p>
+                      <p>Brownie liquorice brownie tart dragée jelly-o tootsie roll. Liquorice ice cream biscuit. Pastry lemon drops I love cotton candy jelly beans. I love bear claw brownie sugar plum pastry. Danish danish topping I love cake I love donut apple pie marzipan. I love dragée bonbon chocolate lemon drops cake toffee. Biscuit cotton candy chocolate cake tootsie roll carrot cake. Tart bonbon I love I love dessert soufflé cheesecake. Cotton candy powder donut tart bonbon pie muffin jujubes. Carrot cake tootsie roll icing apple pie. Tiramisu gingerbread wafer I love. Chupa chups wafer chocolate cake toffee toffee sweet roll pudding fruitcake. Marshmallow dragée fruitcake cake halvah marshmallow muffin.</p>
+                      <p>Chocolate cake sweet roll halvah I love I love gummies sweet roll cupcake carrot cake. Lemon drops tart chocolate cake chocolate cake apple pie wafer pie. Dragée I love donut I love cotton candy. Carrot cake cookie I love cake I love sugar plum tart cake. Chocolate bar cheesecake jelly chupa chups croissant. Caramels I love sweet roll. Sesame snaps lemon drops chupa chups cake gummi bears caramels cupcake. Jujubes jelly-o dragée tiramisu marshmallow chupa chups. Sweet toffee sesame snaps sweet roll carrot cake topping. Pudding chocolate cake tiramisu marshmallow carrot cake biscuit carrot cake marzipan chupa chups. Dessert pie donut oat cake I love marzipan. Cake macaroon chocolate macaroon jelly. Fruitcake chocolate cake macaroon oat cake.</p>
+
+                      <h5><span class="year">2016 - 2017</span> Director, Software Engineering</h5>
+                      <h6>ACME Systems, Concord, MA</h6>
+                      <p>Cupcake ipsum dolor sit amet caramels apple pie powder pie. I love pie donut sweet roll chocolate cheesecake donut tootsie roll. Topping icing cake fruitcake marzipan I love ice cream. Candy canes danish dessert wafer biscuit sweet roll bear claw. Sweet I love dessert powder halvah fruitcake sweet roll. I love gummi bears lemon drops icing biscuit. Dragée cupcake toffee cotton candy donut caramels topping. Cheesecake liquorice fruitcake marzipan marzipan. Bear claw marzipan topping icing carrot cake cheesecake ice cream lemon drops. Dessert jelly caramels candy canes oat cake sugar plum cake tiramisu. Lollipop powder gummi bears gingerbread cupcake lollipop marzipan liquorice. Jelly-o biscuit ice cream.</p>
+                      <p>Brownie liquorice brownie tart dragée jelly-o tootsie roll. Liquorice ice cream biscuit. Pastry lemon drops I love cotton candy jelly beans. I love bear claw brownie sugar plum pastry. Danish danish topping I love cake I love donut apple pie marzipan. I love dragée bonbon chocolate lemon drops cake toffee. Biscuit cotton candy chocolate cake tootsie roll carrot cake. Tart bonbon I love I love dessert soufflé cheesecake. Cotton candy powder donut tart bonbon pie muffin jujubes. Carrot cake tootsie roll icing apple pie. Tiramisu gingerbread wafer I love. Chupa chups wafer chocolate cake toffee toffee sweet roll pudding fruitcake. Marshmallow dragée fruitcake cake halvah marshmallow muffin.</p>
+                      <p>Chocolate cake sweet roll halvah I love I love gummies sweet roll cupcake carrot cake. Lemon drops tart chocolate cake chocolate cake apple pie wafer pie. Dragée I love donut I love cotton candy. Carrot cake cookie I love cake I love sugar plum tart cake. Chocolate bar cheesecake jelly chupa chups croissant. Caramels I love sweet roll. Sesame snaps lemon drops chupa chups cake gummi bears caramels cupcake. Jujubes jelly-o dragée tiramisu marshmallow chupa chups. Sweet toffee sesame snaps sweet roll carrot cake topping. Pudding chocolate cake tiramisu marshmallow carrot cake biscuit carrot cake marzipan chupa chups. Dessert pie donut oat cake I love marzipan. Cake macaroon chocolate macaroon jelly. Fruitcake chocolate cake macaroon oat cake.</p>
+
+                      <h5><span class="year">2016 - 2017</span> Director, Software Engineering</h5>
+                      <h6>ACME Systems, Concord, MA</h6>
+                      <p>Cupcake ipsum dolor sit amet caramels apple pie powder pie. I love pie donut sweet roll chocolate cheesecake donut tootsie roll. Topping icing cake fruitcake marzipan I love ice cream. Candy canes danish dessert wafer biscuit sweet roll bear claw. Sweet I love dessert powder halvah fruitcake sweet roll. I love gummi bears lemon drops icing biscuit. Dragée cupcake toffee cotton candy donut caramels topping. Cheesecake liquorice fruitcake marzipan marzipan. Bear claw marzipan topping icing carrot cake cheesecake ice cream lemon drops. Dessert jelly caramels candy canes oat cake sugar plum cake tiramisu. Lollipop powder gummi bears gingerbread cupcake lollipop marzipan liquorice. Jelly-o biscuit ice cream.</p>
+                      <p>Brownie liquorice brownie tart dragée jelly-o tootsie roll. Liquorice ice cream biscuit. Pastry lemon drops I love cotton candy jelly beans. I love bear claw brownie sugar plum pastry. Danish danish topping I love cake I love donut apple pie marzipan. I love dragée bonbon chocolate lemon drops cake toffee. Biscuit cotton candy chocolate cake tootsie roll carrot cake. Tart bonbon I love I love dessert soufflé cheesecake. Cotton candy powder donut tart bonbon pie muffin jujubes. Carrot cake tootsie roll icing apple pie. Tiramisu gingerbread wafer I love. Chupa chups wafer chocolate cake toffee toffee sweet roll pudding fruitcake. Marshmallow dragée fruitcake cake halvah marshmallow muffin.</p>
+                      <p>Chocolate cake sweet roll halvah I love I love gummies sweet roll cupcake carrot cake. Lemon drops tart chocolate cake chocolate cake apple pie wafer pie. Dragée I love donut I love cotton candy. Carrot cake cookie I love cake I love sugar plum tart cake. Chocolate bar cheesecake jelly chupa chups croissant. Caramels I love sweet roll. Sesame snaps lemon drops chupa chups cake gummi bears caramels cupcake. Jujubes jelly-o dragée tiramisu marshmallow chupa chups. Sweet toffee sesame snaps sweet roll carrot cake topping. Pudding chocolate cake tiramisu marshmallow carrot cake biscuit carrot cake marzipan chupa chups. Dessert pie donut oat cake I love marzipan. Cake macaroon chocolate macaroon jelly. Fruitcake chocolate cake macaroon oat cake.</p>
+
+                      <h4 class="space">Education</h4>
+                      <hr>
+                      <h5>University of Massachusetts at Amherst</h5>
+                      <p>BFA Interactive Design, Amherst, MA</p>
+
+                      <h5>University of Massachusetts at Amherst</h5>
+                      <p>BFA Interactive Design, Amherst, MA</p>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="c-card">
+            <h4>Laura Hart</h4>
+            <p>Boston, MA</p>
+            <p>Director of Engineering, Acme Corporation, Rochester Institute, Bachelor of Engineering</p>
+            <p class="bottom-space"><span class="bold">Resume Updated:</span>  02/14/2016</p>
+            <p class="bottom-space"><span class="bold">Experience:</span> 17 years</p>
+            <p><span class="bold">Top Skills:</span> Pearl, Management Skills, Agile</p>
+            <div class="icon-row"><div class="icons"><a href="#"><i class="mdi mdi-thumb-up mdi-24px"></i> </a></div><div class="icons"><a href="#"><i class="mdi mdi-download mdi-24px"></i></a> </div><div class="icons"><a href="#"><i class="mdi mdi-file-send mdi-24px"></i> </a></div><div class="icons dropdown"><button class="circle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
+              <ul class="dropdown-menu dropdown-menu-r" aria-labelledby="dropdownMenu1">
+                <li><a href="#">Message Candidate</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Skip Candidate</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Block from all campaigns</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Add Note</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Move to Folder</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Assign to another Campaign</a></li>
               </ul>
             </div></div>
             <button class="experience" data-toggle="modal" data-target="#myModal">See Experience</button>
@@ -157,23 +326,19 @@
             <p class="bottom-space"><span class="bold">Resume Updated:</span>  02/14/2016</p>
             <p class="bottom-space"><span class="bold">Experience:</span> 17 years</p>
             <p><span class="bold">Top Skills:</span> Pearl, Management Skills, Agile</p>
-            <div class="icon-row"><div class="icons"><a href="#"><i class="mdi mdi-thumb-up mdi-24px"></i> </a></div><div class="icons"><a href="#"><i class="mdi mdi-thumb-down mdi-24px"></i></a> </div><div class="icons"><a href="#"><i class="mdi mdi-block-helper mdi-24px"></i> </a></div><div class="icons dropdown"><button class="circle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
+            <div class="icon-row"><div class="icons"><a href="#"><i class="mdi mdi-thumb-up mdi-24px"></i> </a></div><div class="icons"><a href="#"><i class="mdi mdi-download mdi-24px"></i></a> </div><div class="icons"><a href="#"><i class="mdi mdi-file-send mdi-24px"></i> </a></div><div class="icons dropdown"><button class="circle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
               <ul class="dropdown-menu dropdown-menu-r" aria-labelledby="dropdownMenu1">
-                <li><a href="#">View Resume</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Download Resume</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Print Resume</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Forward Resume</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Add to Folder</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Add to Priority Message Send</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Block from this Campaign</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Block from and future Campaign</a></li>
+                <li><a href="#">Message Candidate</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Skip Candidate</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Block from all campaigns</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Add Note</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Move to Folder</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Assign to another Campaign</a></li>
               </ul>
             </div></div>
             <button class="experience" data-toggle="modal" data-target="#myModal">See Experience</button>
@@ -242,108 +407,19 @@
             <p class="bottom-space"><span class="bold">Resume Updated:</span>  02/14/2016</p>
             <p class="bottom-space"><span class="bold">Experience:</span> 17 years</p>
             <p><span class="bold">Top Skills:</span> Pearl, Management Skills, Agile</p>
-            <div class="icon-row"><div class="icons"><a href="#"><i class="mdi mdi-thumb-up mdi-24px"></i> </a></div><div class="icons"><a href="#"><i class="mdi mdi-thumb-down mdi-24px"></i></a> </div><div class="icons"><a href="#"><i class="mdi mdi-block-helper mdi-24px"></i> </a></div><div class="icons dropdown"><button class="circle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
+            <div class="icon-row"><div class="icons"><a href="#"><i class="mdi mdi-thumb-up mdi-24px"></i> </a></div><div class="icons"><a href="#"><i class="mdi mdi-download mdi-24px"></i></a> </div><div class="icons"><a href="#"><i class="mdi mdi-file-send mdi-24px"></i> </a></div><div class="icons dropdown"><button class="circle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
               <ul class="dropdown-menu dropdown-menu-r" aria-labelledby="dropdownMenu1">
-                <li><a href="#">View Resume</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Download Resume</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Print Resume</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Forward Resume</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Add to Folder</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Add to Priority Message Send</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Block from this Campaign</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Block from and future Campaign</a></li>
-              </ul>
-            </div></div>
-            <button class="experience" data-toggle="modal" data-target="#myModal">See Experience</button>
-
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <div class="col-xs-4 col-sm-4 col-md-4 name-mheader">
-                      <h1>Laura Hart</h1>
-                      <h4>Boston, MA</h4>
-                    </div>
-                    <div class="col-xs-8 col-sm-8 col-md-8 ex-mheader">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                      <div class="m-header-content">
-                        <p>Director of Engineering, Acme Corporation, Rochester Institute, Bachelor of Engineering</p>
-                        <p class="bottom-space"><span class="bold">Resume Updated:</span>  02/14/2016</p>
-                        <p class="bottom-space"><span class="bold">Experience:</span> 17 years</p>
-                        <p><span class="bold">Top Skills:</span> Pearl, Management Skills, Agile</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="modal-body">
-                    <div class="resume-experience">
-                      <h4>Experience</h4>
-                      <hr>
-                      <h5><span class="year">2016 - 2017</span> Director, Software Engineering</h5>
-                      <h6>ACME Systems, Concord, MA</h6>
-                      <p>Cupcake ipsum dolor sit amet caramels apple pie powder pie. I love pie donut sweet roll chocolate cheesecake donut tootsie roll. Topping icing cake fruitcake marzipan I love ice cream. Candy canes danish dessert wafer biscuit sweet roll bear claw. Sweet I love dessert powder halvah fruitcake sweet roll. I love gummi bears lemon drops icing biscuit. Dragée cupcake toffee cotton candy donut caramels topping. Cheesecake liquorice fruitcake marzipan marzipan. Bear claw marzipan topping icing carrot cake cheesecake ice cream lemon drops. Dessert jelly caramels candy canes oat cake sugar plum cake tiramisu. Lollipop powder gummi bears gingerbread cupcake lollipop marzipan liquorice. Jelly-o biscuit ice cream.</p>
-                      <p>Brownie liquorice brownie tart dragée jelly-o tootsie roll. Liquorice ice cream biscuit. Pastry lemon drops I love cotton candy jelly beans. I love bear claw brownie sugar plum pastry. Danish danish topping I love cake I love donut apple pie marzipan. I love dragée bonbon chocolate lemon drops cake toffee. Biscuit cotton candy chocolate cake tootsie roll carrot cake. Tart bonbon I love I love dessert soufflé cheesecake. Cotton candy powder donut tart bonbon pie muffin jujubes. Carrot cake tootsie roll icing apple pie. Tiramisu gingerbread wafer I love. Chupa chups wafer chocolate cake toffee toffee sweet roll pudding fruitcake. Marshmallow dragée fruitcake cake halvah marshmallow muffin.</p>
-                      <p>Chocolate cake sweet roll halvah I love I love gummies sweet roll cupcake carrot cake. Lemon drops tart chocolate cake chocolate cake apple pie wafer pie. Dragée I love donut I love cotton candy. Carrot cake cookie I love cake I love sugar plum tart cake. Chocolate bar cheesecake jelly chupa chups croissant. Caramels I love sweet roll. Sesame snaps lemon drops chupa chups cake gummi bears caramels cupcake. Jujubes jelly-o dragée tiramisu marshmallow chupa chups. Sweet toffee sesame snaps sweet roll carrot cake topping. Pudding chocolate cake tiramisu marshmallow carrot cake biscuit carrot cake marzipan chupa chups. Dessert pie donut oat cake I love marzipan. Cake macaroon chocolate macaroon jelly. Fruitcake chocolate cake macaroon oat cake.</p>
-
-                      <h5><span class="year">2016 - 2017</span> Director, Software Engineering</h5>
-                      <h6>ACME Systems, Concord, MA</h6>
-                      <p>Cupcake ipsum dolor sit amet caramels apple pie powder pie. I love pie donut sweet roll chocolate cheesecake donut tootsie roll. Topping icing cake fruitcake marzipan I love ice cream. Candy canes danish dessert wafer biscuit sweet roll bear claw. Sweet I love dessert powder halvah fruitcake sweet roll. I love gummi bears lemon drops icing biscuit. Dragée cupcake toffee cotton candy donut caramels topping. Cheesecake liquorice fruitcake marzipan marzipan. Bear claw marzipan topping icing carrot cake cheesecake ice cream lemon drops. Dessert jelly caramels candy canes oat cake sugar plum cake tiramisu. Lollipop powder gummi bears gingerbread cupcake lollipop marzipan liquorice. Jelly-o biscuit ice cream.</p>
-                      <p>Brownie liquorice brownie tart dragée jelly-o tootsie roll. Liquorice ice cream biscuit. Pastry lemon drops I love cotton candy jelly beans. I love bear claw brownie sugar plum pastry. Danish danish topping I love cake I love donut apple pie marzipan. I love dragée bonbon chocolate lemon drops cake toffee. Biscuit cotton candy chocolate cake tootsie roll carrot cake. Tart bonbon I love I love dessert soufflé cheesecake. Cotton candy powder donut tart bonbon pie muffin jujubes. Carrot cake tootsie roll icing apple pie. Tiramisu gingerbread wafer I love. Chupa chups wafer chocolate cake toffee toffee sweet roll pudding fruitcake. Marshmallow dragée fruitcake cake halvah marshmallow muffin.</p>
-                      <p>Chocolate cake sweet roll halvah I love I love gummies sweet roll cupcake carrot cake. Lemon drops tart chocolate cake chocolate cake apple pie wafer pie. Dragée I love donut I love cotton candy. Carrot cake cookie I love cake I love sugar plum tart cake. Chocolate bar cheesecake jelly chupa chups croissant. Caramels I love sweet roll. Sesame snaps lemon drops chupa chups cake gummi bears caramels cupcake. Jujubes jelly-o dragée tiramisu marshmallow chupa chups. Sweet toffee sesame snaps sweet roll carrot cake topping. Pudding chocolate cake tiramisu marshmallow carrot cake biscuit carrot cake marzipan chupa chups. Dessert pie donut oat cake I love marzipan. Cake macaroon chocolate macaroon jelly. Fruitcake chocolate cake macaroon oat cake.</p>
-
-                      <h5><span class="year">2016 - 2017</span> Director, Software Engineering</h5>
-                      <h6>ACME Systems, Concord, MA</h6>
-                      <p>Cupcake ipsum dolor sit amet caramels apple pie powder pie. I love pie donut sweet roll chocolate cheesecake donut tootsie roll. Topping icing cake fruitcake marzipan I love ice cream. Candy canes danish dessert wafer biscuit sweet roll bear claw. Sweet I love dessert powder halvah fruitcake sweet roll. I love gummi bears lemon drops icing biscuit. Dragée cupcake toffee cotton candy donut caramels topping. Cheesecake liquorice fruitcake marzipan marzipan. Bear claw marzipan topping icing carrot cake cheesecake ice cream lemon drops. Dessert jelly caramels candy canes oat cake sugar plum cake tiramisu. Lollipop powder gummi bears gingerbread cupcake lollipop marzipan liquorice. Jelly-o biscuit ice cream.</p>
-                      <p>Brownie liquorice brownie tart dragée jelly-o tootsie roll. Liquorice ice cream biscuit. Pastry lemon drops I love cotton candy jelly beans. I love bear claw brownie sugar plum pastry. Danish danish topping I love cake I love donut apple pie marzipan. I love dragée bonbon chocolate lemon drops cake toffee. Biscuit cotton candy chocolate cake tootsie roll carrot cake. Tart bonbon I love I love dessert soufflé cheesecake. Cotton candy powder donut tart bonbon pie muffin jujubes. Carrot cake tootsie roll icing apple pie. Tiramisu gingerbread wafer I love. Chupa chups wafer chocolate cake toffee toffee sweet roll pudding fruitcake. Marshmallow dragée fruitcake cake halvah marshmallow muffin.</p>
-                      <p>Chocolate cake sweet roll halvah I love I love gummies sweet roll cupcake carrot cake. Lemon drops tart chocolate cake chocolate cake apple pie wafer pie. Dragée I love donut I love cotton candy. Carrot cake cookie I love cake I love sugar plum tart cake. Chocolate bar cheesecake jelly chupa chups croissant. Caramels I love sweet roll. Sesame snaps lemon drops chupa chups cake gummi bears caramels cupcake. Jujubes jelly-o dragée tiramisu marshmallow chupa chups. Sweet toffee sesame snaps sweet roll carrot cake topping. Pudding chocolate cake tiramisu marshmallow carrot cake biscuit carrot cake marzipan chupa chups. Dessert pie donut oat cake I love marzipan. Cake macaroon chocolate macaroon jelly. Fruitcake chocolate cake macaroon oat cake.</p>
-
-                      <h4 class="space">Education</h4>
-                      <hr>
-                      <h5>University of Massachusetts at Amherst</h5>
-                      <p>BFA Interactive Design, Amherst, MA</p>
-
-                      <h5>University of Massachusetts at Amherst</h5>
-                      <p>BFA Interactive Design, Amherst, MA</p>
-                    </div>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3">
-          <div class="c-card">
-            <h4>Laura Hart</h4>
-            <p>Boston, MA</p>
-            <p>Director of Engineering, Acme Corporation, Rochester Institute, Bachelor of Engineering</p>
-            <p class="bottom-space"><span class="bold">Resume Updated:</span>  02/14/2016</p>
-            <p class="bottom-space"><span class="bold">Experience:</span> 17 years</p>
-            <p><span class="bold">Top Skills:</span> Pearl, Management Skills, Agile</p>
-            <div class="icon-row"><div class="icons"><a href="#"><i class="mdi mdi-thumb-up mdi-24px"></i> </a></div><div class="icons"><a href="#"><i class="mdi mdi-thumb-down mdi-24px"></i></a> </div><div class="icons"><a href="#"><i class="mdi mdi-block-helper mdi-24px"></i> </a></div><div class="icons dropdown"><button class="circle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
-              <ul class="dropdown-menu dropdown-menu-r" aria-labelledby="dropdownMenu1">
-                <li><a href="#">View Resume</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Download Resume</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Print Resume</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Forward Resume</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Add to Folder</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Add to Priority Message Send</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Block from this Campaign</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Block from and future Campaign</a></li>
+                <li><a href="#">Message Candidate</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Skip Candidate</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Block from all campaigns</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Add Note</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Move to Folder</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Assign to another Campaign</a></li>
               </ul>
             </div></div>
             <button class="experience" data-toggle="modal" data-target="#myModal">See Experience</button>
@@ -419,23 +495,19 @@
             <p class="bottom-space"><span class="bold">Resume Updated:</span>  02/14/2016</p>
             <p class="bottom-space"><span class="bold">Experience:</span> 17 years</p>
             <p><span class="bold">Top Skills:</span> Pearl, Management Skills, Agile</p>
-            <div class="icon-row"><div class="icons"><a href="#"><i class="mdi mdi-thumb-up mdi-24px"></i> </a></div><div class="icons"><a href="#"><i class="mdi mdi-thumb-down mdi-24px"></i></a> </div><div class="icons"><a href="#"><i class="mdi mdi-block-helper mdi-24px"></i> </a></div><div class="icons dropdown"><button class="circle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
+            <div class="icon-row"><div class="icons"><a href="#"><i class="mdi mdi-thumb-up mdi-24px"></i> </a></div><div class="icons"><a href="#"><i class="mdi mdi-download mdi-24px"></i></a> </div><div class="icons"><a href="#"><i class="mdi mdi-file-send mdi-24px"></i> </a></div><div class="icons dropdown"><button class="circle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
               <ul class="dropdown-menu dropdown-menu-r" aria-labelledby="dropdownMenu1">
-                <li><a href="#">View Resume</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Download Resume</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Print Resume</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Forward Resume</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Add to Folder</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Add to Priority Message Send</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Block from this Campaign</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Block from and future Campaign</a></li>
+                <li><a href="#">Message Candidate</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Skip Candidate</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Block from all campaigns</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Add Note</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Move to Folder</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Assign to another Campaign</a></li>
               </ul>
             </div></div>
             <button class="experience" data-toggle="modal" data-target="#myModal">See Experience</button>
@@ -504,23 +576,19 @@
             <p class="bottom-space"><span class="bold">Resume Updated:</span>  02/14/2016</p>
             <p class="bottom-space"><span class="bold">Experience:</span> 17 years</p>
             <p><span class="bold">Top Skills:</span> Pearl, Management Skills, Agile</p>
-            <div class="icon-row"><div class="icons"><a href="#"><i class="mdi mdi-thumb-up mdi-24px"></i> </a></div><div class="icons"><a href="#"><i class="mdi mdi-thumb-down mdi-24px"></i></a> </div><div class="icons"><a href="#"><i class="mdi mdi-block-helper mdi-24px"></i> </a></div><div class="icons dropdown"><button class="circle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
+            <div class="icon-row"><div class="icons"><a href="#"><i class="mdi mdi-thumb-up mdi-24px"></i> </a></div><div class="icons"><a href="#"><i class="mdi mdi-download mdi-24px"></i></a> </div><div class="icons"><a href="#"><i class="mdi mdi-file-send mdi-24px"></i> </a></div><div class="icons dropdown"><button class="circle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
               <ul class="dropdown-menu dropdown-menu-r" aria-labelledby="dropdownMenu1">
-                <li><a href="#">View Resume</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Download Resume</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Print Resume</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Forward Resume</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Add to Folder</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Add to Priority Message Send</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Block from this Campaign</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Block from and future Campaign</a></li>
+                <li><a href="#">Message Candidate</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Skip Candidate</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Block from all campaigns</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Add Note</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Move to Folder</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Assign to another Campaign</a></li>
               </ul>
             </div></div>
             <button class="experience" data-toggle="modal" data-target="#myModal">See Experience</button>
@@ -589,23 +657,19 @@
             <p class="bottom-space"><span class="bold">Resume Updated:</span>  02/14/2016</p>
             <p class="bottom-space"><span class="bold">Experience:</span> 17 years</p>
             <p><span class="bold">Top Skills:</span> Pearl, Management Skills, Agile</p>
-            <div class="icon-row"><div class="icons"><a href="#"><i class="mdi mdi-thumb-up mdi-24px"></i> </a></div><div class="icons"><a href="#"><i class="mdi mdi-thumb-down mdi-24px"></i></a> </div><div class="icons"><a href="#"><i class="mdi mdi-block-helper mdi-24px"></i> </a></div><div class="icons dropdown"><button class="circle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
+            <div class="icon-row"><div class="icons"><a href="#"><i class="mdi mdi-thumb-up mdi-24px"></i> </a></div><div class="icons"><a href="#"><i class="mdi mdi-download mdi-24px"></i></a> </div><div class="icons"><a href="#"><i class="mdi mdi-file-send mdi-24px"></i> </a></div><div class="icons dropdown"><button class="circle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
               <ul class="dropdown-menu dropdown-menu-r" aria-labelledby="dropdownMenu1">
-                <li><a href="#">View Resume</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Download Resume</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Print Resume</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Forward Resume</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Add to Folder</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Add to Priority Message Send</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Block from this Campaign</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Block from and future Campaign</a></li>
+                <li><a href="#">Message Candidate</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Skip Candidate</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Block from all campaigns</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Add Note</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Move to Folder</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Assign to another Campaign</a></li>
               </ul>
             </div></div>
             <button class="experience" data-toggle="modal" data-target="#myModal">See Experience</button>
@@ -674,23 +738,19 @@
             <p class="bottom-space"><span class="bold">Resume Updated:</span>  02/14/2016</p>
             <p class="bottom-space"><span class="bold">Experience:</span> 17 years</p>
             <p><span class="bold">Top Skills:</span> Pearl, Management Skills, Agile</p>
-            <div class="icon-row"><div class="icons"><a href="#"><i class="mdi mdi-thumb-up mdi-24px"></i> </a></div><div class="icons"><a href="#"><i class="mdi mdi-thumb-down mdi-24px"></i></a> </div><div class="icons"><a href="#"><i class="mdi mdi-block-helper mdi-24px"></i> </a></div><div class="icons dropdown"><button class="circle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
+            <div class="icon-row"><div class="icons"><a href="#"><i class="mdi mdi-thumb-up mdi-24px"></i> </a></div><div class="icons"><a href="#"><i class="mdi mdi-download mdi-24px"></i></a> </div><div class="icons"><a href="#"><i class="mdi mdi-file-send mdi-24px"></i> </a></div><div class="icons dropdown"><button class="circle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
               <ul class="dropdown-menu dropdown-menu-r" aria-labelledby="dropdownMenu1">
-                <li><a href="#">View Resume</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Download Resume</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Print Resume</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Forward Resume</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Add to Folder</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Add to Priority Message Send</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Block from this Campaign</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Block from and future Campaign</a></li>
+                <li><a href="#">Message Candidate</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Skip Candidate</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Block from all campaigns</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Add Note</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Move to Folder</a></li>
+                <li role="separator" class="li-divider"></li>
+                <li><a href="#">Assign to another Campaign</a></li>
               </ul>
             </div></div>
             <button class="experience" data-toggle="modal" data-target="#myModal">See Experience</button>
@@ -768,8 +828,10 @@
       </div>
 
       <div class="row hidden-xs " style="margin-top: 20px; padding-bottom: 30px;">
-        <div class="col-md-3 pull-right">
-          <a href="#" class="back">Go back</a> <button class="message pull-right" ng-click="vm.createMessage()">Next</button>
+        <hr class="hr-color">
+        <div class="col-md-4 pull-right">
+          <a href="#" class="back">Go back</a> <button class="message pull-right" ng-click="vm.createMessage()">Create Message</button>
+
         </div>
       </div>
 
@@ -799,3 +861,33 @@
 </section>
 <link href="https://cdn.materialdesignicons.com/1.7.12/css/materialdesignicons.min.css" rel="stylesheet">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
+
+<!--
+<script>
+  $('#location').on('click', function(){
+    $('.location-search , .arrow_box-2').toggle();
+    $('#job, #skill').removeClass('active-crit');
+    $(this).addClass('active-crit');
+  });
+
+  $('#job').on('click', function () {
+    $('#job-search, .arrow_box').toggleClass('hide');
+    $('#location, #skill').removeClass('active-crit');
+    $(this).addClass('active-crit');
+  });
+
+  $('#skill').on('click', function () {
+    $('.arrow_box-1').toggle();
+    toggleDisplay($('#job-search-2'));
+    $('#job, #location').removeClass('active-crit');
+    $(this).addClass('active-crit');
+  });
+
+
+  function toggleDisplay(element) {
+    var display = element.css('display');
+    element.css('display',(display==="table")?"none":"table");
+  }
+</script>
+-->
