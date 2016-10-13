@@ -72,7 +72,7 @@
     </div>
 
 
-
+<div class="container">
 
     <div class="row">
 
@@ -215,8 +215,10 @@
         </div> <!-- end row -->
 
         <div class="row" style="margin-top: 20px;">
-          <div class="hidden-xs col-md-3  pull-right">
+          <div class="hidden-xs col-md-7 text-right"><a href="#" class="back">View All Job Campaigns</a> </div>
+          <div class="hidden-xs col-md-4  pull-right">
             <ul class="nav-pagination text-right">
+              <li><a href="#!"><i class="mdi mdi-chevron-double-left pag-double"></i></a></li>
               <li><a href="#!"><i class="mdi mdi-chevron-left"></i></a></li>
               <li class="active"><a href="#!" class="pag-active">1</a></li>
               <li><a href="#!">2</a></li>
@@ -224,12 +226,14 @@
               <li><a href="#!">4</a></li>
               <li><a href="#!">5</a></li>
               <li><a href="#!"><i class="mdi mdi-chevron-right"></i></a></li>
+              <li><a href="#!"><i class="mdi mdi-chevron-double-right pag-double"></i></a></li>
             </ul>
           </div>
         </div>
 
-        <div class="row" style="margin-top: 20px;">
-          <div class="hidden-xs col-md-3 pull-right">
+        <div class="row hidden-xs" style="margin-top: 20px;">
+          <hr class="hr-color">
+          <div class="col-md-3 pull-right">
             <button class="message pull-right" ng-click="vm.createCampaign()">Create Job Campaign</button>
           </div>
         </div>
@@ -241,7 +245,7 @@
       </div>
     </div>
 
-
+</div> <!--end container-->
 
 
   </div> <!-- end container-fluid -->

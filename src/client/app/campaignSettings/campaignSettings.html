@@ -6,12 +6,50 @@
         <a href="#" class="pull-right"><i class="mdi mdi-window-close"></i></a>
       </div>
     </div>
-    <div class="row spacing">
-      <div class="hidden-xs col-md-12" style="padding: 20px 0;">
-        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 882.85 54.9"><defs><style>.cls-1,.cls-2,.cls-3{isolation:isolate;}.cls-2,.cls-3{font-size:18px;font-family:Roboto-Regular, Roboto;}.cls-2,.cls-6{fill:#00aff0;}.cls-3,.cls-7{fill:#bdbdbd;}.cls-4{filter:url(#filter-2);}.cls-5{fill:#fff;}.cls-5,.cls-8{stroke:#bdbdbd;}.cls-8{fill:none;stroke-linecap:square;}</style><filter id="filter-2" x="-49" y="-48.6" width="200" height="200" name="filter-2"><feMorphology result="shadowSpreadOuter1" operator="dilate" radius="0.5" in="SourceAlpha"/><feOffset result="shadowOffsetOuter1" dy="2" in="shadowSpreadOuter1"/><feGaussianBlur result="shadowBlurOuter1" stdDeviation="2" in="shadowOffsetOuter1"/><feComposite result="shadowBlurOuter1" operator="out" in="shadowBlurOuter1" in2="SourceAlpha"/><feColorMatrix values="0 0 0 0 0.77 0 0 0 0 0.77 0 0 0 0 0.77 0 0 0 0.5 0" in="shadowBlurOuter1"/></filter></defs><title>Group 1</title><g id="Page-1"><g id="Artboard"><g id="Group-13"><g id="Group-1"><g id="Campaign-Settings" class="cls-1"><text class="cls-2" transform="translate(0 15.4)">Campaign Settings</text></g><g id="Manage-Candidates" class="cls-1"><text class="cls-3" transform="translate(364 15.4)">Manage Candidates</text></g><g id="Message-Candidates" class="cls-1"><text class="cls-3" transform="translate(713 15.4)">Message Candidates</text></g><g id="Group-Copy-3"><g id="Oval-4"><g class="cls-4"><circle cx="69" cy="45.4" r="9"/></g><circle id="path-1" class="cls-5" cx="69" cy="45.4" r="9"/></g><circle id="Oval-1-Copy-2" class="cls-6" cx="69" cy="45.4" r="4"/></g><circle id="Oval-1-Copy-3" class="cls-7" cx="808" cy="45.4" r="4"/><circle id="Oval-1-Copy-4" class="cls-7" cx="441" cy="47.4" r="4"/><path id="Line-Copy" class="cls-8" d="M83.5,45.5h331" transform="translate(1 1.4)"/><path id="Line-Copy-2" class="cls-8" d="M458.5,44.5h331" transform="translate(1 1.4)"/></g></g></g></g></svg>
+    <div class="row">
+      <div class="row" style="margin: 20px 0;">
+      <div class="hidden-xs col-sm-12 col-md-12">
+        <div class="nav-progress">
+
+          <div class="progress-step">
+            <span class="nav-progress-text progress-complete-txt">Campaign Settings</span>
+            <span class="progress-done"></span>
+          </div>
+
+
+          <div class="bar-extend">
+            <span class="nav-progress-bar-waiting"></span>
+          </div>
+
+
+          <div class="progress-step">
+            <span class="nav-progress-text progress-waiting-txt">Manage Candidates</span>
+            <span class="progress-waiting"></span>
+          </div>
+
+          <div class="bar-extend">
+            <span class="nav-progress-bar-waiting"></span>
+          </div>
+
+          <div class="progress-step">
+            <span class="nav-progress-text progress-waiting-txt">Message Candidates</span>
+            <span class="progress-waiting"></span>
+          </div>
+
+          <div class="bar-extend">
+            <span class="nav-progress-bar-waiting"></span>
+          </div>
+
+          <div class="progress-step">
+            <span class="nav-progress-text progress-waiting-txt">Launch Campaign</span>
+            <span class="progress-waiting"></span>
+          </div>
+
         </div>
+    </div>
+      </div>
 
-
+<div class="container">
     <div class="col-xs-12 col-sm-6 col-md-6">
       <div class="candidate-row">
         <div class="form-group has-error has-feedback">
@@ -24,12 +62,14 @@
         <p class="pull-left bold" style="margin-right: 10px;">Auto-Message Candidates</p>
         <md-switch class="md-primary switch" md-no-ink aria-label="Switch No Ink" ng-model="data.cb5"></md-switch>
       </div>
-      <div class="canidate-row">
-        <a href="#" class="show-content">Advanced Configuration</a>
-      </div>
       <div class="candidate-row">
         <p>When auto-message is on, all <span class="bold">"Matched"</span> candidates will receive your custom message. Select your <span class="bold">"Favorites"</span> to prioritize who will receive your message first. </p>
       </div>
+
+      <div class="canidate-row">
+        <a href="#" class="show-content">Advanced Configuration</a>
+      </div>
+
       <div class="candidate-row adv-cont hide">
         <label class="candidate-label">Everyday Until</label>
         <div layout-gt-xs="row">
@@ -86,8 +126,7 @@
 
     </div>
 
-
-
+    </div>
 
 
 
