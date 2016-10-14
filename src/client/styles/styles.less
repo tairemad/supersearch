@@ -61,6 +61,10 @@ nav.navbar.navbar-fixed-top.navbar-inverse{display: none;}
   @media (max-width: 767px){
     height: 40px;
   }
+  @media (max-width: 375px){
+    padding-left: 3px;
+    padding-right: 3px;
+  }
 }
 
 .c-likes-border{
@@ -88,6 +92,7 @@ nav.navbar.navbar-fixed-top.navbar-inverse{display: none;}
 
 .num{
   font-size: 37px;
+  font-weight: 300;
 }
 .num-text{
   vertical-align: super;
@@ -95,10 +100,10 @@ nav.navbar.navbar-fixed-top.navbar-inverse{display: none;}
 
 @media(max-width: 768px){
   .num{
-    font-size: 22px;
+    font-size: 16px;
   }
   .num-text{
-    font-size: 18px;
+    font-size: 14px;
     vertical-align: middle;
   }
 }
@@ -109,7 +114,6 @@ nav.navbar.navbar-fixed-top.navbar-inverse{display: none;}
   }
   .num-text{
     font-size: 14px;
-    vertical-align: middle;
   }
 }
 
@@ -343,13 +347,16 @@ ul.dropdown-menu.dropdown-menu-r{
   border-radius: 0;
   top: 38px;
   @media (max-width: 768px){
-    left: calc(-167px + 17px);
+    left: -120px;
   }
   @media (min-width: 767px) and (max-width: 990px){
-    left: calc(-167px + 18px);
+    left: -162px;
+  }
+  @media(max-width: 500px){
+    left: -147px;
   }
   @media (max-width: 375px){
-    left: calc(-167px + 15);
+    left: -163px;
   }
   .li-divider{
     border-bottom:1px solid @m-blue;
@@ -952,7 +959,7 @@ span.crit-text{
     margin-top: 15px;
   }
   img{
-    max-width: 100%;
+    max-width: 90%;
   }
 }
 
@@ -1087,13 +1094,14 @@ span.crit-text{
   background: transparent;
   color: #666;
   border-radius: 15px;
-  padding: 2px 5px 3px 3px;
+  padding: 2px 5px 2px 3px;
   margin: 5px 3px 5px 0;
+  font-size: 12px;
   a{
     color: #9d9d9d;
   }
   .chips{
-   padding: 3px;
+   padding: 1px;
     background-color: #ddd;
     color: #333;
     -moz-border-radius: 60px;
