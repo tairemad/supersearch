@@ -142,17 +142,22 @@
 
 
     <div class="row" style="margin-left:40px; margin-top: 30px;">
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">auto-message on</button>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".auto-mess-on">auto-message on</button>
 
-      <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-        <div class="modal-dialog modal-sm" role="document">
-          <div class="modal-content m-modal modal-border">
+      <div class="modal fade auto-mess-on" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content m-modal modal-border-ssd">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <div class="modal-message">
             <h3>How selecting candidates to auto-message works:</h3>
             <p>When auto-message is on, all <strong>"Matched"</strong> candidates will recieve your custom message. Select candidates to add to your <strong>"Favorites"</strong> to prioritize who will recieve your message first.</p>
-            <button class="center-block modal-btn">Get Started</button>
-            <p><input type="checkbox" name="showMessage" class="checkbox"> Don't show this message again</p>
+            <div class="clearfix">
+              <button class="modal-btn pull-right clearfix" style="width: 40%; margin: 0;">Get Started</button>
+            </div>
+              <div class="clearfix">
+            <p class="pull-right"><input type="checkbox" name="showMessage" class="checkbox"> Don't show this message again</p>
+                </div>
+
             </div>
           </div>
         </div>
@@ -160,17 +165,21 @@
 
 
 
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm1">auto-message off</button>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".auto-mess-off">auto-message off</button>
 
-      <div class="modal fade bs-example-modal-sm1" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-        <div class="modal-dialog modal-sm" role="document">
-          <div class="modal-content m-modal modal-border">
+      <div class="modal fade auto-mess-off" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content m-modal modal-border-ssd">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <div class="modal-message">
               <h3>How selecting candidates to auto-message works:</h3>
               <p>When auto-message is off, only <strong>"Selected"</strong> candidates will recieve your your message first.</p>
-              <button class="center-block modal-btn-inverse">Get Started</button>
-              <p><input type="checkbox" name="showMessage" class="checkbox"> Don't show this message again</p>
+              <div class="clearfix">
+                <button class="modal-btn-inverse pull-right clearfix" style="width: 40%; margin: 0;">Get Started</button>
+              </div>
+              <div class="clearfix">
+                <p class="pull-right"><input type="checkbox" name="showMessage" class="checkbox"> Don't show this message again</p>
+              </div>
             </div>
           </div>
         </div>

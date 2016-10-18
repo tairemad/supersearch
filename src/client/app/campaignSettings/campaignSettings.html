@@ -67,11 +67,7 @@
         <p>When auto-message is on, all <span class="bold">"Matched"</span> candidates will receive your custom message. Select your <span class="bold">"Favorites"</span> to prioritize who will receive your message first. </p>
       </div>
 
-      <div class="canidate-row">
-        <a href="#" class="show-content">Advanced Configuration</a>
-      </div>
-
-      <div class="candidate-row adv-cont hide">
+      <div class="candidate-row">
         <label class="candidate-label">Everyday Until</label>
         <div layout-gt-xs="row">
           <div flex-gt-xs>
@@ -79,19 +75,24 @@
           </div>
         </div>
       </div>
-      <div class="candidate-row adv-cont hide">
+      <div class="candidate-row">
         <label class="candidate-label">Maximum daily sends</label>
         <md-slider-container>
           <md-slider md-discrete ng-model="bass" min="0" max="100" step="10" aria-label="bass" class="md-primary"></md-slider>
           </md-slider>
         </md-slider-container>
       </div>
+
+      <div class="canidate-row">
+        <i class="mdi mdi-settings-box blue-txt"></i><a href="#" class="show-content">Advanced Configuration</a>
+      </div>
+
       <div class="candidate-row adv-cont hide">
         <label class="candidate-label">Exclude Messaging to Candidates:</label>
         <div class="dropdown">
           <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <span class="pull-left">Dropdown trigger</span>
-            <span class="pull-right caret"></span>
+            <span class="pull-right mdi mdi-chevron-down"></span>
           </button>
           <ul class="dropdown-menu" aria-labelledby="dLabel">
             <li><a href="#">Select Item</a> </li>
@@ -107,7 +108,7 @@
         <div class="dropdown">
           <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <span class="pull-left">Dropdown trigger</span>
-            <span class="pull-right caret"></span>
+            <span class="pull-right mdi mdi-chevron-down"></span>
           </button>
           <ul class="dropdown-menu" aria-labelledby="dLabel">
             <li><a href="#">Select Item</a> </li>
@@ -123,6 +124,27 @@
         <p><input type="checkbox" class="checkbox check-space"> Include veteran candidates only</p>
         <p><input type="checkbox" class="checkbox check-space"> Include private candidates</p>
       </div>
+
+      <div class="adv-cont hide">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".c-cancel">cancel</button>
+
+      <div class="modal fade c-cancel" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content m-modal modal-border-ssd">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="modal-message">
+              <p class="text-center"> <i class="mdi mdi-alert-circle mdi-48px blue-txt"></i></p>
+              <p class="text-center">You are leaving the current page.</p>
+              <div class="text-center"><button class="modal-btn-inverse" style="width: 40%; margin-right: 5px;">Save Changes</button> <button class="modal-btn" style="width: 40%;">Discard Changes</button></div>
+              <p class="text-center"><a href="#" class="move-modal-link">Cancel</a></p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+
     </div>
 
 
