@@ -22,6 +22,7 @@
 
 body{
   background-color: @white;
+  overflow-x: hidden;
 }
 
 .navbar * {
@@ -45,8 +46,18 @@ nav.navbar.navbar-fixed-top.navbar-inverse{display: none;}
   font-weight: 300;
   font-size: 20px;
   padding: 10px 10px 10px 30px;
+  @media(max-width: 420px){
+    padding: 5px;
+    font-size: 16px;
+  }
   a{
     color: @white;
+  }
+  span{
+    font-size: 12px;
+    @media(max-width: 420px){
+      display: block;
+    }
   }
 }
 
@@ -122,13 +133,16 @@ nav.navbar.navbar-fixed-top.navbar-inverse{display: none;}
   -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.15);
   background-color: @white;
-  padding: 10px;
+  padding: 10px 20px;
   width: 100%;
   min-height: 285px;
   margin-bottom: 15px;
   border-top: 4px solid #e0e0e0;
+  @media (max-width: 990px){
+    min-height: 270px;
+  }
   h4{
-    font-size: 18px;
+    font-size: 16px;
     color: @m-purple;
     margin-bottom: 0;
   }
@@ -136,6 +150,10 @@ nav.navbar.navbar-fixed-top.navbar-inverse{display: none;}
     font-size: 12px;
     color: #4b4b4b;
     line-height: 14px;
+  }
+  hr.card-hr{
+    margin-left: -20px;
+    margin-right: -20px;
   }
 }
 .form-control{
@@ -215,7 +233,7 @@ nav.navbar.navbar-fixed-top.navbar-inverse{display: none;}
 
 .icons{
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 8px;
   width: 20%;
   text-align: center;
   &:last-child{
@@ -268,7 +286,7 @@ button.message{
   border: 1px solid @m-purple;
   background-color: @m-purple;
   color: @white;
-  width: 165px;
+  width: 185px;
   height: 40px;
   font-size: 14px;
 }
@@ -606,7 +624,7 @@ button.md-datepicker-button.md-icon-button.md-button.md-ink-ripple{
 }
 #dLabel{
   background-color:@white;
-  padding: 6px;
+  padding: 3px 5px;
   width: 100%;
   border: 1px solid #ccc;
   .caret{
@@ -793,9 +811,17 @@ input[type=checkbox] {
   font-size: 20px;
   font-weight: 300;
   @media (max-width: 465px){
-    font-size: 16px;
+    font-size: 12px;
   }
 }
+
+@media (max-width: 465px) {
+  .m-time-until{
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+}
+
 .criteria{
   background: #e8e8e8;
   padding: 3px 10px;
@@ -877,10 +903,16 @@ span.crit-num{
   font-weight: 300;
   margin-right: 6px;
   vertical-align: middle;
+  @media (max-width: 768px){
+    font-size: 16px;
+  }
 }
 span.crit-text{
   font-size: 16px;
   vertical-align: middle;
+  @media (max-width: 768px){
+    font-size: 14px;
+  }
 }
 
 .matched-crit-section{
@@ -899,6 +931,9 @@ span.crit-text{
   min-height: 89px;
   @media (max-width: 938px){
     min-height: 105px;
+  }
+  @media (max-width: 939px) and (max-width: 1075px){
+    min-height: 110px;
   }
   @media (min-width: 1350px){
     min-height: 80px;
@@ -920,12 +955,13 @@ span.crit-text{
 
 .dash-header-right{
   background-color: @white;
-  padding: 14px 20px;
-  font-size: 12px;
+  padding: 10px 20px;
+  font-size: 14px;
   color: #515151;
   font-weight: 400;
   min-height: 80px;
   @media (max-width: 938px){
+    font-size: 12px;
     min-height: 105px;
   }
 }
@@ -944,6 +980,9 @@ span.crit-text{
     font-size: 18px;
     color: @m-purple;
     margin-bottom: 0;
+    @media(max-width: 420px){
+      font-size: 16px;
+    }
   }
   p{
     font-size: 12px;
@@ -952,19 +991,22 @@ span.crit-text{
   }
   .ss-head{
     background-color: #f7f7f7;
-    padding: 10px;
+    padding: 10px 15px;
     margin-bottom: 10px;
-  }
-  button.experience{
-    margin-top: 15px;
   }
   img{
     max-width: 90%;
   }
 }
 
+.card-hr{
+  border: 0;
+  border-top: 1px solid #eee;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
 .mini-ss-head{
-  background-color: #e9f8ff;
+  background-color: @white;
   padding: 15px 10px 20px;
 }
 .right-arrow-ss, .left-arrow-ss{
@@ -1004,6 +1046,10 @@ span.crit-text{
   color: @m-purple;
   font-weight: 600;
   text-align: center;
+  @media (max-width: 420px){
+    min-width: 65px;
+    margin: 5px 4px 10px 0;
+  }
 }
 
 .arrow_box, .arrow_box-1, .arrow_box-2 {
@@ -1183,7 +1229,7 @@ input.location-zip{
 
 .criteria-sect{
   background-color: @white;
-  padding: 0 30px 45px;
+  padding-bottom:45px;
 }
 
 .criteria-pos{
@@ -1211,6 +1257,7 @@ input.location-zip{
   background-color: @white;
   width: 100%;
   min-height: 200px;
+  overflow: auto;
 }
 
 // progress bar
