@@ -10,10 +10,10 @@
 @m-green: #46c054;
 @m-blue: #00aff0;
 @m-purple: #642891;
-@m-purple: #7945a0;
 @m-orange: #ff9430;
 @white: #fff;
 @l-blue: #d9f3fd;
+@m-orange-dk: #E6852B;
 
 * {
     font-family: Roboto;
@@ -33,6 +33,10 @@ body{
     display: none;
 }
 
+button{
+  outline: none;
+}
+
 nav.navbar.navbar-fixed-top.navbar-inverse{display: none;}
 #criteriaPage, #ss-dashboard, #ss-dash-1{
   background-color: #ededed;
@@ -41,7 +45,7 @@ nav.navbar.navbar-fixed-top.navbar-inverse{display: none;}
   background-color: @white;
 }
 .select-header{
-  background-color: #622e8f;
+  background-color: @m-purple;
   color: @white;
   font-weight: 300;
   font-size: 20px;
@@ -148,7 +152,7 @@ nav.navbar.navbar-fixed-top.navbar-inverse{display: none;}
   }
   p{
     font-size: 12px;
-    color: #4b4b4b;
+    color: #212121;
     line-height: 14px;
   }
   hr.card-hr{
@@ -264,7 +268,7 @@ ul.nav-pagination li{
     color: @m-blue;
   }
   a{
-    color: #4b4b4b;
+    color: #212121;
   }
   .pag-double{
     color: #9c9c9c;
@@ -309,7 +313,7 @@ a.back{
 }
 
 .right-arrow, .left-arrow{
-  color: #d67f00;
+  color: @m-orange-dk;
   position: relative;
   width: 50px;
   top: 300px;
@@ -317,13 +321,13 @@ a.back{
 
 
 .right-arrow-m, .left-arrow-m{
-  color: #d67f00;
+  color: @m-orange-dk;
   position: relative;
   top: 125px;
 }
 
 .right-arrow-xs, .left-arrow-xs{
-  color: #d67f00;
+  color: @m-orange-dk;
   position: relative;
   top:110px;
 }
@@ -455,7 +459,7 @@ ul.dropdown-menu.dropdown-menu-r{
   }
   .ex-mheader{
     background-color: @l-blue;
-    color: #4b4b4b;
+    color: #212121;
     min-height: 150px;
     @media (max-width: 320px){
       min-height: 197px;
@@ -977,7 +981,7 @@ span.crit-text{
   border-top: 4px solid #e0e0e0;
   overflow: auto;
   h4{
-    font-size: 18px;
+    font-size: 16px;
     color: @m-purple;
     margin-bottom: 0;
     @media(max-width: 420px){
@@ -986,13 +990,13 @@ span.crit-text{
   }
   p{
     font-size: 12px;
-    color: #4b4b4b;
+    color: #212121;
     line-height: 14px;
   }
   .ss-head{
     background-color: #f7f7f7;
     padding: 10px 15px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   img{
     max-width: 90%;
@@ -1010,7 +1014,7 @@ span.crit-text{
   padding: 15px 10px 20px;
 }
 .right-arrow-ss, .left-arrow-ss{
-  color: #d67f00;
+  color: @m-orange-dk;
   position: relative;
   top:120px;
 }
@@ -1054,7 +1058,7 @@ span.crit-text{
 
 .arrow_box, .arrow_box-1, .arrow_box-2 {
   position: relative;
-  background: #ffffff;
+  background: @white;
   top:1px;
   z-index: 5;
 }
@@ -1104,7 +1108,7 @@ span.crit-text{
 }
 .arrow_box:after, .arrow_box-1:after, .arrow_box-2:after {
   border-color: rgba(255, 255, 255, 0);
-  border-bottom-color: #ffffff;
+  border-bottom-color: @white;
   border-width: 9px;
   margin-left: -30px;
 }
@@ -1183,9 +1187,9 @@ input.location-zip{
 #job-search-2{
   display: table;
 }
-.location-search, .arrow_box-1, .arrow_box-2, .hide, #job-search-2{
+/*.location-search, .arrow_box-1, .arrow_box-2, .hide, #job-search-2{
   display: none;
-}
+}*/
 
 .active-crit{
   border-bottom: 4px solid @m-blue;
@@ -1374,4 +1378,65 @@ a.show-content{
 
 .c-cancel .modal-message p{
   margin: 0;
+}
+
+.modal-message textarea{
+  border: 1px solid #ccc;
+}
+button.inv-btn{
+  width: 100%;
+  height: 40px;
+  background-color: @m-blue;
+  color: @white;
+  border: 1px solid @m-blue;
+  margin: 15px 0;
+}
+button.inv-btn-inverse{
+  width: 100%;
+  height: 40px;
+  background-color: @white;
+  color: @m-blue;
+  border: 1px solid @m-blue;
+  margin: 15px 0;
+}
+
+.preview{
+  border-color: @m-blue;
+}
+
+.preview-indicator{
+  background: @m-blue;
+  color: @white;
+  width: 27%;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  font-size: 12px;
+  i{
+    vertical-align: middle;
+    opacity: 0.8;
+  }
+}
+
+.mess-delete{
+  margin-top: 30px;
+  @media(max-width: 375px){
+    margin-top: 50px;
+  }
+}
+
+button.add{
+  border: 1px solid @m-purple;
+  background-color: @m-purple;
+  color: @white;
+  padding: 5px 15px;
+  height: 34px;
+  font-size: 14px;
+  @media (max-width: 440px){
+    padding: 5px 10px;
+  }
+}
+
+.crit-space{
+  margin-bottom: 3px;
 }
