@@ -871,6 +871,30 @@ input[type=checkbox] {
   }
 }
 
+
+.matched-crit-sm-solo{
+  background-color: @m-purple;
+  color: @white;
+  border-top: 3px solid @m-blue;
+  max-height: 54px;
+  i{
+    vertical-align: baseline;
+    color: rgba(255,255,255,0.3);
+    position: relative;
+    top:9px;
+  }
+  &:before{
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -16px;
+    left: 45%;
+    border-bottom: 13px solid @m-blue;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+  }
+}
 .selected-crit-sm{
   background-color: @white;
   color: @m-blue;
@@ -1376,9 +1400,6 @@ a.show-content{
   margin-left: 5px;
 }
 
-.c-cancel .modal-message p{
-  margin: 0;
-}
 
 .modal-message textarea{
   border: 1px solid #ccc;
@@ -1439,4 +1460,16 @@ button.add{
 
 .crit-space{
   margin-bottom: 3px;
+}
+
+.dropdown-menu.adv-drop > li > a:hover, .dropdown-menu.adv-drop > li > a:focus{
+    color: @m-purple;
+    background-color: transparent;
+}
+
+.adv-options{
+  cursor: pointer;
+}
+#adv-options{
+  display: none;
 }
