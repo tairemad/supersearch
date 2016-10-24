@@ -338,7 +338,7 @@ a.back{
   left:-55px;
 }
 .candidate-row-bottom{
-  margin: 10px 0;
+  margin: 10px 0 0;
   background: @m-purple;
   color: @white;
   min-height: 20px;
@@ -762,6 +762,11 @@ input[type=checkbox] {
     color: @white;
     border: 1px solid @m-blue;
     margin: 15px 0;
+    &:hover{
+      background-color: @white;
+      color: @m-blue;
+      border: 1px solid @m-blue;
+    }
   }
   button.modal-btn-inverse{
     width: 100%;
@@ -770,6 +775,11 @@ input[type=checkbox] {
     color: @m-blue;
     border: 1px solid @m-blue;
     margin: 15px 0;
+    &:hover{
+      background-color: @m-blue;
+      color: @white;
+      border: 1px solid @m-blue;
+    }
   }
 }
 
@@ -1230,7 +1240,7 @@ input.location-zip{
     z-index: 1;
     position: absolute;
     top: 100%;
-    right: 43%;
+    right: 48%;
     width: 0;
     height: 0;
     border-top: 17px solid @m-blue;
