@@ -346,7 +346,7 @@ a.back{
 }
 
 .pagination{
-  margin: 5px 0 0 65px;
+  margin-top: 5px;
 }
 .pagination>li>a, .pagination>li>span {
   border-radius: 50% !important;
@@ -432,7 +432,7 @@ ul.dropdown-menu.dropdown-menu-r{
     background-color: @m-blue;
     color: @white;
     min-height: 150px;
-    padding: 30px 15px 15px;
+    padding: 30px 30px 15px;
     @media (max-width: 320px){
       min-height: 226px;
     }
@@ -460,7 +460,7 @@ ul.dropdown-menu.dropdown-menu-r{
   .ex-mheader{
     background-color: @l-blue;
     color: #212121;
-    min-height: 150px;
+    min-height: 153px;
     @media (max-width: 320px){
       min-height: 197px;
     }
@@ -470,6 +470,28 @@ ul.dropdown-menu.dropdown-menu-r{
       width: 90%;
     }
   }
+}
+
+.res-arrow-right{
+  width: 10%;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 30%;
+  color: @m-orange-dk;
+}
+
+.res-arrow-left{
+  width: 10%;
+  display: inline-block;
+  position: absolute;
+  top: 30%;
+  color:@m-orange-dk;
+}
+
+.resume-experience{
+  width: 80%;
+  margin: 0 auto;
 }
 .modal-header .close {
   margin-top: 5px;
@@ -1041,7 +1063,7 @@ span.crit-text{
   border: 0;
   border-top: 1px solid #eee;
   margin-top: 20px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 .mini-ss-head{
   background-color: @white;
@@ -1438,11 +1460,12 @@ button.inv-btn-inverse{
 .preview-indicator{
   background: @m-blue;
   color: @white;
-  width: 27%;
+  width: 26%;
   position: absolute;
   top: 0px;
   right: 10px;
   font-size: 12px;
+  padding: 0 2px;
   i{
     vertical-align: middle;
     opacity: 0.8;
@@ -1482,4 +1505,22 @@ button.add{
 }
 #adv-options{
   display: none;
+}
+
+.crit-title{
+  font-size: 14px;
+  font-weight: 500;
+  color: @m-purple;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+ul.crit-list{
+  font-size: 12px;
+  color: #757575;
+  list-style: none;
+  padding-left: 0;
+}
+
+.crit-head{
+  color: #212121;
 }

@@ -98,13 +98,13 @@
         <label class="candidate-label">Exclude Messaging to Candidates:</label>
         <div class="dropdown">
           <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="pull-left">Dropdown trigger</span>
+            <span class="pull-left">I messaged last week</span>
             <span class="pull-right mdi mdi-chevron-down"></span>
           </button>
           <ul class="dropdown-menu" aria-labelledby="dLabel">
-            <li><a href="#">Select Item</a> </li>
-            <li><a href="#">Select Item</a> </li>
-            <li><a href="#">Select Item</a> </li>
+            <li><a href="#">I messaged last month</a> </li>
+            <li><a href="#">Others messaged last week</a> </li>
+            <li><a href="#">Others messages last month</a> </li>
           </ul>
         </div>
       </div>
@@ -114,13 +114,12 @@
         <label class="candidate-label">Search Engine</label>
         <div class="dropdown">
           <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="pull-left">Dropdown trigger</span>
+            <span class="pull-left">Monster’s 6th Sense Semantic</span>
             <span class="pull-right mdi mdi-chevron-down"></span>
           </button>
           <ul class="dropdown-menu" aria-labelledby="dLabel">
-            <li><a href="#">Select Item</a> </li>
-            <li><a href="#">Select Item</a> </li>
-            <li><a href="#">Select Item</a> </li>
+            <li><a href="#">Monster’s 6th Sense Semantic</a> </li>
+            <li><a href="#">Bolean Search Engine</a> </li>
           </ul>
         </div>
       </div>
@@ -177,14 +176,20 @@
     </div>
     <div class="row visible-xs">
       <div class="col-xs-12 candidate-row-bottom">
-        <p class="pull-left"><span class="glyphicon glyphicon-menu-left" ng-click="vm.goBack()"></span>Back</p>
-        <ul class="pagination text-center">
-          <li class="active"><a href="#"> <span class="sr-only">(current)</span></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-        </ul>
-        <p class="pull-right">Next <span class="glyphicon glyphicon-menu-right"></span></p>
+        <div class="col-xs-3 pull-left">
+          <p><span class="glyphicon glyphicon-menu-left"></span>Back</p>
+        </div>
+        <div class="col-xs-6 text-center">
+          <ul class="pagination">
+            <li class="active"><a href="#"> <span class="sr-only">(current)</span></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </div>
+        <div class="col-xs-3 pull-right">
+          <p>Next <span class="glyphicon glyphicon-menu-right"></span></p>
+        </div>
       </div>
     </div>
 
