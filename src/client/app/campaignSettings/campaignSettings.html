@@ -56,7 +56,7 @@
 
 
     <div class="col-xs-12 col-sm-6 col-md-6">
-      <div class="candidate-row">
+      <div class="candidate-row-top">
        <!-- <div class="form-group has-error has-feedback">-->
         <div class="form-group">
           <label>Job Campaign Name</label>
@@ -83,7 +83,7 @@
         </div>
       </div>
       <div class="candidate-row">
-        <label class="candidate-label">Maximum daily sends</label>
+        <label class="candidate-label">Maximum Daily Sends</label>
         <md-slider-container>
           <md-slider md-discrete ng-model="bass" min="0" max="100" step="10" aria-label="bass" class="md-primary"></md-slider>
           </md-slider>
@@ -166,17 +166,17 @@
 
 
 
-    <div class="row spacing hidden-xs" style="margin-top: 40px; padding-bottom: 30px;">
+    <div class="row spacing hidden-xs" style="margin-top: 30px; padding-bottom: 30px;">
       <hr class="hr-color">
       <div class="col-md-4 pull-right">
-        <a href="#" class="back">Go back</a> <button class="message pull-right" ng-click="vm.addClientCriteria()">Next</button>
+        <a href="#" class="back">Back</a> <button class="message pull-right" ng-click="vm.addClientCriteria()">Next</button>
 
       </div>
     </div>
     </div>
     <div class="row visible-xs">
       <div class="col-xs-12 candidate-row-bottom">
-        <div class="col-xs-3 pull-left">
+        <div class="col-xs-3 pull-left" style="padding:0;">
           <p><span class="glyphicon glyphicon-menu-left"></span>Back</p>
         </div>
         <div class="col-xs-6 text-center">
@@ -187,7 +187,7 @@
             <li><a href="#"></a></li>
           </ul>
         </div>
-        <div class="col-xs-3 pull-right">
+        <div class="col-xs-3 text-right pull-right" style="padding:0;">
           <p>Next <span class="glyphicon glyphicon-menu-right"></span></p>
         </div>
       </div>
@@ -198,5 +198,6 @@
 <script>
   $('.show-content').on('click', function () {
       $('.adv-cont').toggleClass('hide');
+    $(this).find('i').toggleClass('mdi-chevron-right mdi-chevron-down');
   });
 </script>
