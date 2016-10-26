@@ -62,7 +62,7 @@
         <div class="dropdown">
           <label>Create New Letter or Select Template</label>
           <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="pull-left">Template 1</span>
+            <span class="pull-left placeholder">Template 1</span>
             <span class="pull-right mdi mdi-chevron-down"></span>
           </button>
           <ul class="dropdown-menu" aria-labelledby="dLabel">
@@ -118,7 +118,7 @@
         <div id="follow-up-1" class="space-top">
           <div class="dropdown space-bottom">
             <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <span class="pull-left">Create New Letter</span>
+              <span class="pull-left placeholder">Create New Letter</span>
               <span class="pull-right mdi mdi-chevron-down"></span>
             </button>
             <ul class="dropdown-menu" aria-labelledby="dLabel">
@@ -128,10 +128,11 @@
             </ul>
           </div>
           <input type="text" placeholder="Enter Subject Line" class="form-control space-bottom">
+          <p class="space-bottom"><input type="checkbox" class="checkbox"> Save message as Template</p>
           <div class="textarea space-bottom">
             <textarea ui-tinymce="tinymceOptions" ng-model="tinymceModel"></textarea>
           </div>
-          <p class="space-bottom"><input type="checkbox" class="checkbox"> Save message as Template</p>
+
         </div>
 
         <div class="message-follow clearfix" id="follow-Label-2">
@@ -142,7 +143,7 @@
         <div id="follow-up-2" class="space-top">
           <div class="dropdown space-bottom">
             <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <span class="pull-left">Create New Letter</span>
+              <span class="pull-left placeholder">Create New Letter</span>
               <span class="pull-right mdi mdi-chevron-down"></span>
             </button>
             <ul class="dropdown-menu" aria-labelledby="dLabel">
@@ -152,10 +153,11 @@
             </ul>
           </div>
           <input type="text" placeholder="Enter Subject Line" class="form-control space-bottom">
+          <p><input type="checkbox" class="checkbox"> Save message as Template</p>
           <div class="textarea space-bottom">
             <textarea ui-tinymce="tinymceOptions" ng-model="tinymceModel"></textarea>
           </div>
-          <p><input type="checkbox" class="checkbox"> Save message as Template</p>
+
         </div>
 
       </div>
@@ -169,7 +171,7 @@
         <div class="modal fade c-delete" tabindex="-1" role="dialog">
           <div class="modal-dialog" role="document">
             <div class="modal-content m-modal modal-border-ssd">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="mdi mdi-close mdi-16px"></i></span></button>
               <div class="modal-message">
                 <p>Are you  sure you want to delete this template?</p>
                 <div class="clearfix text-right">
@@ -182,14 +184,13 @@
         </div>
 
       </div>
-
+      <div class="row spacing">
+        <hr class="hr-color">
       <div class="col-md-4 pull-right">
-
         <a href="#" class="back">Back</a> <button class="message pull-right" ng-click="vm.viewCampaign()">Next</button>
-
       </div>
     </div>
-
+</div>
     </div>
 
     <div class="row visible-xs">

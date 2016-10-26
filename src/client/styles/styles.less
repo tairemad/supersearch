@@ -110,7 +110,7 @@ nav.navbar.navbar-fixed-top.navbar-inverse{display: none;}
 }
 
 .num{
-  font-size: 37px;
+  font-size: 36px;
   font-weight: 300;
 }
 .num-text{
@@ -145,7 +145,7 @@ nav.navbar.navbar-fixed-top.navbar-inverse{display: none;}
   width: 100%;
   min-height: 285px;
   margin-bottom: 15px;
-  border-top: 4px solid #e0e0e0;
+  border-top: 8px solid #e0e0e0;
   @media (max-width: 990px){
     min-height: 270px;
   }
@@ -667,6 +667,9 @@ button.md-datepicker-button.md-icon-button.md-button.md-ink-ripple{
   .caret{
     margin-top: 8px;
   }
+  .placeholder{
+    margin-top: 2px;
+  }
 }
 ul.dropdown-menu{
   width: 100%;
@@ -906,7 +909,11 @@ input[type=checkbox] {
   color: @white;
   border-right: 1px solid @m-blue;
   border-top: 1px solid @m-blue;
-  max-height: 54px;
+  border-left: 1px solid @m-blue;
+  height: 54px;
+  @media (max-width: 767px){
+    height: 34px;
+  }
   i{
     vertical-align: baseline;
     color: rgba(255,255,255,0.3);
@@ -944,6 +951,7 @@ input[type=checkbox] {
   color: @m-blue;
   border-top: 1px solid @m-blue;
   border-bottom: 1px solid @m-blue;
+  border-right: 1px solid @m-blue;
   max-height: 54px;
   i{
     vertical-align: baseline;
@@ -989,10 +997,9 @@ span.crit-text{
 
 .matched-crit-section{
   background-color: #e3e3e3;
-  padding: 50px 5px 15px;
+  padding: 80px 5px 15px;
   overflow: auto;
-  position: relative;
-  margin-top: -9px;
+  z-index: -1;
 }
 .dash-header-left{
   background-color: @m-blue;
@@ -1000,16 +1007,7 @@ span.crit-text{
   font-size: 21px;
   font-weight: 400;
   padding: 25px;
-  min-height: 89px;
-  @media (max-width: 938px){
-    min-height: 105px;
-  }
-  @media (max-width: 939px) and (max-width: 1075px){
-    min-height: 110px;
-  }
-  @media (min-width: 1350px){
-    min-height: 80px;
-  }
+  height: 90px;
   &:before{
     content: '';
     width: 0;
@@ -1031,10 +1029,9 @@ span.crit-text{
   font-size: 14px;
   color: #515151;
   font-weight: 400;
-  min-height: 80px;
+  height: 90px;
   @media (max-width: 938px){
     font-size: 12px;
-    min-height: 105px;
   }
 }
 
@@ -1046,7 +1043,7 @@ span.crit-text{
   width: 100%;
   min-height: 250px;
   margin-bottom: 15px;
-  border-top: 4px solid #e0e0e0;
+  border-top: 8px solid #e0e0e0;
   overflow: auto;
   h4{
     font-size: 16px;
@@ -1214,7 +1211,7 @@ span.crit-text{
   background: transparent;
   color: #666;
   border-radius: 15px;
-  padding: 2px 5px 2px 3px;
+  padding: 2px 5px 2px 5px;
   margin: 5px 3px 5px 0;
   font-size: 12px;
   a{
@@ -1332,6 +1329,7 @@ input.location-zip{
   width: 100%;
   min-height: 200px;
   overflow: auto;
+  padding-bottom: 50px;
 }
 
 // progress bar
@@ -1474,12 +1472,12 @@ button.inv-btn-inverse{
 .preview-indicator{
   background: @m-blue;
   color: @white;
-  width: 26%;
+  width: 80px;
   position: absolute;
   top: 0px;
   right: 10px;
   font-size: 12px;
-  padding: 0 2px;
+  padding: 0 5px;
   i{
     vertical-align: middle;
     opacity: 0.8;
@@ -1488,6 +1486,7 @@ button.inv-btn-inverse{
 
 .mess-delete{
   margin-top: 30px;
+  color: #757575;
   @media(max-width: 375px){
     margin-top: 50px;
   }
@@ -1516,6 +1515,8 @@ button.add{
 
 .adv-options{
   cursor: pointer;
+  color: @m-purple;
+  font-size: 14px;
 }
 #adv-options{
   display: none;
@@ -1539,6 +1540,11 @@ ul.crit-list{
   color: #212121;
 }
 
+.crit-header{
+  font-size: 16px;
+  color: #757575;
+}
+
 .crit-list-section{
   margin-bottom: 15px;
 }
@@ -1560,8 +1566,8 @@ ul.crit-nav{
   }
   a{
     color: @m-purple;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 400;
     padding: 12px 12px 2px;
     border-bottom: 2px solid transparent;
     transition: .2s;
@@ -1592,6 +1598,18 @@ ul.crit-nav{
   font-size: 68px;
 }
 
+.mdi-set.mdi-12px, .mdi.mdi-12px:before {
+  font-size: 12px;
+}
+
+.mdi-set.mdi-16px, .mdi.mdi-16px:before {
+  font-size: 16px;
+}
+
+.mdi-set.mdi-54px, .mdi.mdi-54px:before {
+  font-size: 54px;
+}
+
 .md-datepicker-expand-triangle.ng-scope{
   content: "\F140";
   font: normal normal normal 24px/1 "Material Design Icons";
@@ -1599,4 +1617,41 @@ ul.crit-nav{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transform: translate(0, 0);
+}
+
+.c-card-content{
+  height: 150px;
+}
+
+.c-spacing {
+  margin-top: 20px;
+  padding: 0 15px;
+}
+
+.rem-left-pad {
+  padding-left: 0;
+}
+
+.no-padding{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.c-card-pad{
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+
+.crit-sm-section{
+  z-index: 1;
+  position: absolute;
+  left: 0;
+}
+
+
+.link-sec{
+  height: 35px;
+  margin-top: 10px;
+  text-align: center;
 }
